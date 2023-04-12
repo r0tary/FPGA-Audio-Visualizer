@@ -13,6 +13,7 @@
 
 -- Dependencies: Clock divider - from 100MHz to 25 MHz
 -- 
+-- Revision 0.03 - Change colors using switches, RGB signals now have 4 bits per analog signal
 -- Revision 0.02 - More Extensively commented 
 -- Revision 0.01 - File Created, output is a square in the up left corner
 -- 
@@ -27,9 +28,11 @@ use IEEE.numeric_std.all;
 entity VGA is
     port(clk: in std_logic;                         -- 100MHz clock
         RST: in std_logic;                          -- Universal reset
+        R_switch, G_switch, B_switch: in std_logic;
+        
         Hsync: out std_logic;                       -- Horizontal sync
         Vsync: out std_logic;                       -- Vertical sync
-        RGB: out std_logic_vector(2 downto 0));     -- Red, Green, Blue analog signals
+        R,G,B: out std_logic_vector(3 downto 0));   -- Red, Green, Blue analog signals
 end VGA;
 
 architecture Behavioral of VGA is
@@ -135,17 +138,28 @@ begin
     --Output image on the screen
     image_generator: process(clk_25, RST, hPos, vPos, videoOn)
     begin
-        if (RST = '1')then
-            RGB <= "000";
+        if (RST = '1')then 
+            R <= (others => '0');
+            G <= (others => '0');
+            B <= (others => '0');
         elsif (clk_25'event and clk_25 = '1') then
             if(videoOn = '1') then
+                -- draw square in specified area 
                 if((hPos >= 10 and hPos <= 60) AND (vPos >= 10 and vPos <= 60))then
-                    RGB <= "100";
+                    -- which color is enabled depends on dip switch status
+                    R <= (others => R_switch);
+                    G <= (others => G_switch);
+                    B <= (others => B_switch);
                 else
-                    RGB <= "000";     
+                -- rest of the screen is black
+                    R <= (others => '0');
+                    G <= (others => '0');
+                    B <= (others => '0');     
                 end if;
             else
-                RGB <= "000";
+                R <= (others => '0');
+                G <= (others => '0');
+                B <= (others => '0');
             end if;
         end if;
     end process;

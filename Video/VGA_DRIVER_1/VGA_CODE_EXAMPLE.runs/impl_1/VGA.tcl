@@ -68,7 +68,16 @@ set rc [catch {
   set_param chipscope.maxJobs 2
   set_param xicom.use_bs_reader 1
   open_checkpoint VGA_routed.dcp
-  set_property webtalk.parent_dir C:/Users/G/CODE/proj_Vivado/video_VGA/VGA_CODE_EXAMPLE/VGA_CODE_EXAMPLE.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Video/VGA_DRIVER_1/VGA_CODE_EXAMPLE.cache/wt [current_project]
+  set src_rc [catch { 
+    puts "source C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Video/VGA_DRIVER_1/VGA_CODE_EXAMPLE.srcs/utils_1/imports/VGA_EXAMPLE/script.tcl"
+    source C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Video/VGA_DRIVER_1/VGA_CODE_EXAMPLE.srcs/utils_1/imports/VGA_EXAMPLE/script.tcl
+  } _RESULT] 
+  if {$src_rc} { 
+    send_msg_id runtcl-1 error "$_RESULT"
+    send_msg_id runtcl-2 error "sourcing script C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Video/VGA_DRIVER_1/VGA_CODE_EXAMPLE.srcs/utils_1/imports/VGA_EXAMPLE/script.tcl failed"
+    return -code error
+  }
   catch { write_mem_info -force VGA.mmi }
   write_bitstream -force VGA.bit 
   catch {write_debug_probes -quiet -force VGA}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1680077536">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1681208862">
   <File Type="PA-TCL" Name="VGA.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="VGA_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="VGA_reports.tcl"/>
@@ -13,7 +13,7 @@
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/Design Sources/clock_div.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Design Sources/clock_div.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Design Sources/clock_div.vhd"/>
         <Attr Name="ImportTime" Val="1680020289"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -35,7 +35,7 @@
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/XDC/zedboard_master.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Zedboard-old-master/Resources/XDC/zedboard_master.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Zedboard-old-master/Resources/XDC/zedboard_master.xdc"/>
         <Attr Name="ImportTime" Val="1678811108"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

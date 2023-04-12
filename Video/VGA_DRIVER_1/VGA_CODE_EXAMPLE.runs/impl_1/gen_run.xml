@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1680077536">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1681208862">
   <File Type="BITSTR-BMM" Name="VGA_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="VGA_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="VGA_timing_summary_init.rpt"/>
@@ -73,7 +73,7 @@
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/Design Sources/clock_div.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Design Sources/clock_div.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Design Sources/clock_div.vhd"/>
         <Attr Name="ImportTime" Val="1680020289"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -95,7 +95,7 @@
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/XDC/zedboard_master.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Zedboard-old-master/Resources/XDC/zedboard_master.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Zedboard-old-master/Resources/XDC/zedboard_master.xdc"/>
         <Attr Name="ImportTime" Val="1678811108"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -112,7 +112,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -121,6 +123,6 @@
     <Step Id="phys_opt_design"/>
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
-    <Step Id="write_bitstream"/>
+    <Step Id="write_bitstream" PreStepTclHook="$PSRCDIR/utils_1/imports/VGA_EXAMPLE/script.tcl"/>
   </Strategy>
 </GenRun>

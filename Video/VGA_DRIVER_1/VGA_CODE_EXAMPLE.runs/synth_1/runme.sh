@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/G/CODE/proj_Vivado/video_VGA/VGA_CODE_EXAMPLE/VGA_CODE_EXAMPLE.runs/synth_1'
+HD_PWD='C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Video/VGA_DRIVER_1/VGA_CODE_EXAMPLE.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

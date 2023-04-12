@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
-| Date             : Wed Mar 29 10:14:14 2023
+| Date             : Tue Apr 11 12:29:25 2023
 | Host             : DESKTOP-VUE9GRE running 64-bit major release  (build 9200)
 | Command          : report_power -file VGA_power_routed.rpt -pb VGA_power_summary_routed.pb -rpx VGA_power_routed.rpx
 | Design           : VGA
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.576        |
+| Total On-Chip Power (W)  | 0.604        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.466        |
+| Dynamic (W)              | 0.494        |
 | Device Static (W)        | 0.110        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 78.4         |
-| Junction Temperature (C) | 31.6         |
+| Max Ambient (C)          | 78.0         |
+| Junction Temperature (C) | 32.0         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.222 |      544 |       --- |             --- |
-|   LUT as Logic |     0.178 |      288 |     53200 |            0.54 |
+| Slice Logic    |     0.242 |      555 |       --- |             --- |
+|   LUT as Logic |     0.198 |      286 |     53200 |            0.54 |
 |   CARRY4       |     0.022 |       64 |     13300 |            0.48 |
-|   Register     |     0.017 |      103 |    106400 |            0.10 |
+|   Register     |     0.017 |      112 |    106400 |            0.11 |
 |   BUFG         |     0.006 |        2 |        32 |            6.25 |
 |   Others       |     0.000 |        4 |       --- |             --- |
-| Signals        |     0.240 |      295 |       --- |             --- |
-| I/O            |     0.004 |        7 |       200 |            3.50 |
+| Signals        |     0.235 |      309 |       --- |             --- |
+| I/O            |     0.016 |       19 |       200 |            9.50 |
 | Static Power   |     0.110 |          |           |                 |
-| Total          |     0.576 |          |           |                 |
+| Total          |     0.604 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.475 |       0.466 |      0.009 |
+| Vccint    |       1.000 |     0.503 |       0.494 |      0.009 |
 | Vccaux    |       1.800 |     0.012 |       0.000 |      0.012 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -145,8 +145,8 @@ Table of Contents
 +------------------+-----------+
 | Name             | Power (W) |
 +------------------+-----------+
-| VGA              |     0.466 |
-|   clk_div_100_25 |     0.287 |
+| VGA              |     0.494 |
+|   clk_div_100_25 |     0.286 |
 +------------------+-----------+
 
 
