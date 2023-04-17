@@ -13,6 +13,7 @@
 
 -- Dependencies: Clock divider - from 100MHz to 25 MHz
 -- 
+-- Revision 0.04 - Changed to single 24 bit RGB stream, changed videoOn as a port
 -- Revision 0.03 - Change colors using switches, RGB signals now have 4 bits per analog signal
 -- Revision 0.02 - More Extensively commented 
 -- Revision 0.01 - File Created, output is a square in the up left corner
@@ -26,13 +27,16 @@ use IEEE.numeric_std.all;
 
 
 entity VGA is
-    port(clk: in std_logic;                         -- 100MHz clock
-        RST: in std_logic;                          -- Universal reset
+    port(
+        --inputs
+        clk: in std_logic;                         -- 100MHz clock
+        RST: in std_logic;                         -- Universal reset
         R_switch, G_switch, B_switch: in std_logic;
         
-        Hsync: out std_logic;                       -- Horizontal sync
-        Vsync: out std_logic;                       -- Vertical sync
-        R,G,B: out std_logic_vector(3 downto 0));   -- Red, Green, Blue analog signals
+        --outputs
+        Hsync, Vsync: out std_logic;               -- Horizontal and Vertical sync
+        RGB: out std_logic_vector(23 downto 0);     -- Red, Green, Blue analog outputs in one 24 bit stream
+        videoOn: out std_logic);                    -- Indicates if hPos and vPos are in drawable area
 end VGA;
 
 architecture Behavioral of VGA is
@@ -57,11 +61,14 @@ architecture Behavioral of VGA is
     constant VSP: integer := 2;                     -- 2 Sync pulse (Retrace)
     constant VBP: integer := 33;                    -- 33 Left border (back porch)
     
-    signal videoOn : std_logic := '0';              -- Can draw or not - 0 = cant draw, 1 = can draw
-    
+    signal R, G,B : unsigned(7 downto 0) := (others => '0'); --Red, Green and Blue seperated into three signals
+ 
 begin
+    
+    RGB <= STD_LOGIC_VECTOR(R & G & B);
+    
     --Converting the 100MHz clock to a 25MHz clock
-    clk_div_100_25: clk_div port map(clk, RST, clk_25);-- Clock division from 100Mhz to 25 MHz 
+    clk_div_100_25: clk_div port map(Clk_in => clk,reset => RST,CLK_out => clk_25);-- Clock division from 100Mhz to 25 MHz 
     
     --Horizontal position counter
         --Increments and goes through a horizontal line 
