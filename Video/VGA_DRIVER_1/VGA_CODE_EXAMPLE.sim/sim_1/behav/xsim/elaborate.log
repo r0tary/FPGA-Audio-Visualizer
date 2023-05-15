@@ -14,7 +14,10 @@ Compiling package ieee.numeric_std
 Compiling package ieee.std_logic_textio
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
 Compiling architecture behavioral of entity xil_defaultlib.clk_div [clk_div_default]
 Compiling architecture behavioral of entity xil_defaultlib.VGA [vga_default]
+Compiling architecture behavioral of entity xil_defaultlib.pattern_generator [pattern_generator_default]
+Compiling architecture behavioral of entity xil_defaultlib.Video_top [video_top_default]
 Compiling architecture behavioral of entity xil_defaultlib.vga_tb
 Built simulation snapshot VGA_tb_behav

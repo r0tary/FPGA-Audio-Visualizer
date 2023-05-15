@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="VGA_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="VGA_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="4286879000000fs"></ZoomStartTime>
+      <ZoomEndTime time="4288138000001fs"></ZoomEndTime>
+      <Cursor1Time time="4283500000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="102"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/VGA_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VGA_tb/RST" type="logic">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VGA_tb/Hsync" type="logic">
+      <obj_property name="ElementShortName">Hsync</obj_property>
+      <obj_property name="ObjectShortName">Hsync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VGA_tb/Vsync" type="logic">
+      <obj_property name="ElementShortName">Vsync</obj_property>
+      <obj_property name="ObjectShortName">Vsync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VGA_tb/RGB" type="array">
+      <obj_property name="ElementShortName">RGB[23:0]</obj_property>
+      <obj_property name="ObjectShortName">RGB[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VGA_tb/video_active" type="logic">
+      <obj_property name="ElementShortName">video_active</obj_property>
+      <obj_property name="ObjectShortName">video_active</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VGA_tb/x_cord" type="other">
+      <obj_property name="ElementShortName">x_cord</obj_property>
+      <obj_property name="ObjectShortName">x_cord</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VGA_tb/y_cord" type="other">
+      <obj_property name="ElementShortName">y_cord</obj_property>
+      <obj_property name="ObjectShortName">y_cord</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VGA_tb/R_switch" type="logic">
+      <obj_property name="ElementShortName">R_switch</obj_property>
+      <obj_property name="ObjectShortName">R_switch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VGA_tb/G_switch" type="logic">
+      <obj_property name="ElementShortName">G_switch</obj_property>
+      <obj_property name="ObjectShortName">G_switch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VGA_tb/B_switch" type="logic">
+      <obj_property name="ElementShortName">B_switch</obj_property>
+      <obj_property name="ObjectShortName">B_switch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VGA_tb/clk_25" type="logic">
+      <obj_property name="ElementShortName">clk_25</obj_property>
+      <obj_property name="ObjectShortName">clk_25</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VGA_tb/clock_period" type="other">
+      <obj_property name="ElementShortName">clock_period</obj_property>
+      <obj_property name="ObjectShortName">clock_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VGA_tb/Video_output/bar_index" type="other">
+      <obj_property name="ElementShortName">bar_index</obj_property>
+      <obj_property name="ObjectShortName">bar_index</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

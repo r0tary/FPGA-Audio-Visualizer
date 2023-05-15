@@ -5,14 +5,17 @@
 -- Create Date: 03/28/2023 09:48:15 AM
 -- Design Name: VGA Driver 
 -- Module Name: VGA - Behavioral
--- Project Name: VGA driver and image generation for Zedboard 
+-- Project Name: VGA video output for Zedboard 
 -- Target Devices: Zedboard
--- Tool Versions: 1.0
+-- Tool Versions: 2.0
 -- Description: VGA video driver for a Zedboard FPGA board. Resolution is 640x480x60Hz
 --  Uses the 100MHz clock source and converts it to 25MHz to drive the resolution to the display
 
 -- Dependencies: Clock divider - from 100MHz to 25 MHz
 -- 
+-- Revision 0.07 - Pattern generator now taken out and is its own seperate design, with Xpos and Ypos being outputs sent to it
+-- Revision 0.06 - Hactive and Vactive now implemented 
+-- Revision 0.05 - Positional Counter and synchronization for H and V are now put in one process together
 -- Revision 0.04 - Changed to single 24 bit RGB stream, changed videoOn as a port
 -- Revision 0.03 - Change colors using switches, RGB signals now have 4 bits per analog signal
 -- Revision 0.02 - More Extensively commented 
@@ -24,28 +27,29 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.numeric_std.all;
+use ieee.std_logic_unsigned.all;
 
 
 entity VGA is
+    generic(
+        RES_X: natural := 640;
+        RES_Y: natural := 480
+    );
     port(
         --inputs
         clk: in std_logic;                         -- 100MHz clock
         RST: in std_logic;                         -- Universal reset
-        R_switch, G_switch, B_switch: in std_logic;
-        
         --outputs
-        Hsync, Vsync: out std_logic;               -- Horizontal and Vertical sync
-        RGB: out std_logic_vector(23 downto 0);     -- Red, Green, Blue analog outputs in one 24 bit stream
-        videoOn: out std_logic);                    -- Indicates if hPos and vPos are in drawable area
+        Xpos: out integer range 0 to 640-1;
+        Ypos: out integer range 0 to 480-1;
+        Hsync: inout std_logic; 
+        Vsync: out std_logic;                       -- Horizontal and Vertical sync
+        videoOn: out std_logic                      -- Indicates if hPos and vPos are in drawable area
+    );                    
 end VGA;
 
 architecture Behavioral of VGA is
-    component clk_div                           
-        port(Clk_in, reset: in std_logic;
-            Clk_out: out std_logic);
-    end component;
     
-    signal clk_25: std_logic;                       -- 25 MHz clock
     signal hPos: integer := 0;                      -- Horizontal position
     signal vPos: integer := 0;                      -- Vertical position
     
@@ -61,113 +65,64 @@ architecture Behavioral of VGA is
     constant VSP: integer := 2;                     -- 2 Sync pulse (Retrace)
     constant VBP: integer := 33;                    -- 33 Left border (back porch)
     
-    signal R, G,B : unsigned(7 downto 0) := (others => '0'); --Red, Green and Blue seperated into three signals
- 
+    signal Hactive, Vactive: std_logic;
+                                       --
 begin
-    
-    RGB <= STD_LOGIC_VECTOR(R & G & B);
-    
-    --Converting the 100MHz clock to a 25MHz clock
-    clk_div_100_25: clk_div port map(Clk_in => clk,reset => RST,CLK_out => clk_25);-- Clock division from 100Mhz to 25 MHz 
     
     --Horizontal position counter
         --Increments and goes through a horizontal line 
-    hor_pos_c: process(clk_25, RST)
+    hor_pos_c: process(clk, RST)
     begin
         if (RST = '1')then
             hPos <= 0;
-        elsif (clk_25'event and clk_25 = '1') then
-            if (hPos = (HD + HFP + HSP + HBP)) then
+            Hsync <= '0';
+        elsif rising_edge(clk) then
+            hPos <= hPos + 1;
+            if (hPos = HSP) then
+                Hsync <= '1';
+            elsif (hPos = (HSP + HBP)) then
+                Hactive <= '1';
+            elsif (hPos = (HSP + HBP + HD)) then
+                Hactive <= '0';
+            elsif (hPos = (HSP + HBP + HD + HFP)) then
+                Hsync <= '0';
                 hPos <= 0;
-            else
-                hPos <= hPos + 1;    
             end if;
         end if;
     end process;
         
     --Vertical position counter
         --Increments and goes through every vertical line
-    ver_pos_c: process(clk_25, RST)
+    ver_pos_c: process(Hsync, RST)
     begin
         if (RST = '1')then
             vPos <= 0;
-        elsif (clk_25'event and clk_25 = '1') then
-            if (hPos = (HD + HFP + HSP + HBP)) then --in order to keep it synchronized,
-                        --will only increment vertical lines when the horizontal line is done
-                if (vPos = (VD + VFP + VSP + VBP)) then
-                    VPos <= 0;
-                else
-                    vPos <= vPos + 1;    
-                end if;
-            end if;
-        end if;  
-    end process;
-
-    Horizontal_sync: process(clk_25, RST, hPos)
-    begin
-        if (RST = '1')then
-            Hsync <= '0'; 
-        elsif (clk_25'event and clk_25 = '1') then
-            if((hPos <= (HD + HFP)) OR (hPos > HD + HFP + HSP)) then
-                Hsync <= '1';
-            else
-                Hsync <= '0';
-            end if;
-        end if;
-    end process;
-
-    Vertical_sync: process(clk_25, RST, vPos)
-    begin
-        if (RST = '1')then
-            Vsync <= '0';
-        elsif (clk_25'event and clk_25 = '1') then
-            if((vPos <= (VD + VFP)) OR (vPos > VD + VFP + VSP)) then
-                Vsync <= '1';
-            else
-                Vsync <= '0';
-            end if;
-        end if;
+        elsif rising_edge(Hsync) then
+                vPos <= vPos + 1; 
+                if (vPos = VSP) then
+                    Vsync <= '1';
+                    Vactive <= '0';
+                elsif (vPos = (VSP + VBP)) then
+                    Vactive <= '1';
+                elsif (vPos = (VSP + VBP + VD)) then
+                    Vactive <= '0';
+                elsif (vPos = (VSP + VBP + VD + VFP)) then
+                    Vsync <= '0';
+                    vPos <= 0;
+                end if;    
+            end if; 
     end process;
     
-    Video_ON: process(clk_25, RST, hPos, vPos)
-    begin
-        if (RST = '1')then
-            videoOn <= '0';
-        elsif (clk_25'event and clk_25 = '1') then
-            if(hPos <= HD and vPos <= VD) then
-                videoOn <= '1';
-            else
-                videoOn <= '0';
-            end if;
-        end if;
-    end process;
+    videoOn <= Hactive AND Vactive;
     
-    --Output image on the screen
-    image_generator: process(clk_25, RST, hPos, vPos, videoOn)
+    X_Y_pos: process(RST, hPos,vPos)
     begin
-        if (RST = '1')then 
-            R <= (others => '0');
-            G <= (others => '0');
-            B <= (others => '0');
-        elsif (clk_25'event and clk_25 = '1') then
-            if(videoOn = '1') then
-                -- draw square in specified area 
-                if((hPos >= 10 and hPos <= 60) AND (vPos >= 10 and vPos <= 60))then
-                    -- which color is enabled depends on dip switch status
-                    R <= (others => R_switch);
-                    G <= (others => G_switch);
-                    B <= (others => B_switch);
-                else
-                -- rest of the screen is black
-                    R <= (others => '0');
-                    G <= (others => '0');
-                    B <= (others => '0');     
-                end if;
-            else
-                R <= (others => '0');
-                G <= (others => '0');
-                B <= (others => '0');
-            end if;
+        if (RST = '1') then
+            Xpos <= 0;
+            Ypos <= 0;
+        elsif (videoOn = '1') then
+            Xpos <= hPos - (HSP + HBP);
+            Ypos <= vPos - (VSP + VBP);
         end if;
     end process;
     

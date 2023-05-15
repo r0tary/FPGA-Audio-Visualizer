@@ -2,6 +2,8 @@
 2019.1
 Sep  4 2019
 09:57:52
-C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Video/VGA_DRIVER_1/VGA_CODE_EXAMPLE.srcs/sim_1/new/VGA_tb.vhd,1681718176,vhdl,,,,vga_tb,,,,,,,,
-C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Video/VGA_DRIVER_1/VGA_CODE_EXAMPLE.srcs/sources_1/imports/Design Sources/clock_div.vhd,1680020289,vhdl2008,C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Video/VGA_DRIVER_1/VGA_CODE_EXAMPLE.srcs/sim_1/new/VGA_tb.vhd,,,clk_div,,,,,,,,
-C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Video/VGA_DRIVER_1/VGA_CODE_EXAMPLE.srcs/sources_1/new/VGA.vhd,1681730950,vhdl2008,C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Video/VGA_DRIVER_1/VGA_CODE_EXAMPLE.srcs/sim_1/new/VGA_tb.vhd,,,vga,,,,,,,,
+C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Video/VGA_DRIVER_1/VGA_CODE_EXAMPLE.srcs/sim_1/new/VGA_tb.vhd,1683875945,vhdl,,,,vga_tb,,,,,,,,
+C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Video/VGA_DRIVER_1/VGA_CODE_EXAMPLE.srcs/sources_1/imports/Design Sources/clock_div.vhd,1683037626,vhdl2008,C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Video/VGA_DRIVER_1/VGA_CODE_EXAMPLE.srcs/sim_1/new/VGA_tb.vhd,,,clk_div,,,,,,,,
+C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Video/VGA_DRIVER_1/VGA_CODE_EXAMPLE.srcs/sources_1/new/VGA.vhd,1683889786,vhdl2008,C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Video/VGA_DRIVER_1/VGA_CODE_EXAMPLE.srcs/sim_1/new/VGA_tb.vhd,,,vga,,,,,,,,
+C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Video/VGA_DRIVER_1/VGA_CODE_EXAMPLE.srcs/sources_1/new/Video_top.vhd,1683794727,vhdl,,,,video_top,,,,,,,,
+C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Video/VGA_DRIVER_1/VGA_CODE_EXAMPLE.srcs/sources_1/new/pattern_generator.vhd,1683891740,vhdl,,,,pattern_generator,,,,,,,,
