@@ -1,54 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1683883646">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1684225993">
+  <File Type="BITSTR-BMM" Name="Video_top_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Video_top_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Video_top_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="Video_top_power_routed.rpt"/>
   <File Type="PA-TCL" Name="Video_top.tcl"/>
-  <File Type="BITSTR-BMM" Name="Video_top_bd.bmm"/>
+  <File Type="OPT-TIMING" Name="Video_top_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Video_top_opt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="Video_top_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="Video_top_reports.tcl"/>
-  <File Type="OPT-DCP" Name="Video_top_opt.dcp"/>
   <File Type="OPT-DRC" Name="Video_top_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="Video_top.hwdef"/>
   <File Type="PWROPT-DCP" Name="Video_top_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Video_top_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Video_top_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="Video_top_placed.dcp"/>
   <File Type="PLACE-IO" Name="Video_top_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Video_top_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="Video_top_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="Video_top_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="Video_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Video_top_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="Video_top_incremental_reuse_pre_placed.rpt"/>
   <File Type="BG-BGN" Name="Video_top.bgn"/>
+  <File Type="PLACE-TIMING" Name="Video_top_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="Video_top_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="Video_top.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Video_top_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="Video_top_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Video_top_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="Video_top.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="Video_top_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="Video_top_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="Video_top_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="Video_top_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="Video_top_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="Video_top_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="Video_top_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="Video_top.ltx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="Video_top_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="Video_top_drc_routed.rpx"/>
   <File Type="BITSTR-MMI" Name="Video_top.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Video_top_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Video_top_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Video_top_methodology_drc_routed.pb"/>
   <File Type="BITSTR-SYSDEF" Name="Video_top.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Video_top_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="Video_top_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="Video_top_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="Video_top_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="Video_top_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="Video_top_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="Video_top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Video_top_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="Video_top_clock_utilization_routed.rpt"/>
-  <File Type="RDI-RDI" Name="Video_top.vdi"/>
   <File Type="ROUTE-BUS-SKEW" Name="Video_top_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="Video_top_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="Video_top_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Video_top_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Video_top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Video_top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Video_top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Video_top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Video_top_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Video_top_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="Video_top.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Video_top_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="Video_top.rbt"/>
   <File Type="BITSTR-NKY" Name="Video_top.nky"/>
   <File Type="BG-DRC" Name="Video_top.drc"/>
+  <File Type="RDI-RDI" Name="Video_top.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>

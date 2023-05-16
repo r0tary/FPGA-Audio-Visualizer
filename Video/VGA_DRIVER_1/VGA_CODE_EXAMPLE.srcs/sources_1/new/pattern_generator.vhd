@@ -21,6 +21,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.numeric_std.all;
 use ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith;
 library UNISIM;
 use UNISIM.VComponents.all;
 
@@ -52,10 +53,11 @@ architecture Behavioral of pattern_generator is
     
     signal test_bars: rom_type_8 := (x"64", x"5A", x"50", x"46", x"3C", x"32", x"28", x"32", x"64", x"5A", x"50", x"46", x"3C", x"32", x"28", x"32"); 
     signal bar_location: rom_type_16 := (X"08C", X"0AC", X"0CC", X"0EC", X"10C", X"12C", X"14C", X"16C", X"18C", X"1AC", X"1CC", X"1EC", x"000", x"000", x"000", x"000");
+    signal bar_start_height: rom_type_8 := (x"F0",x"F0",x"F0",x"F0",x"F0",x"F0",x"F0",x"F0",x"F0",x"F0",x"F0",x"F0", x"00", x"00", x"00", x"00");
     
     constant BAR_width: integer := 20;
     constant BAR_space: integer := 12;
-    constant BAR_start_y: integer := 200; --remember that Y0 is from the top
+    constant start_height_offset: integer := 0; --remember that Y0 is from the top
     signal bar_index: integer range 0 to 15 := 0;
     
     
@@ -77,7 +79,8 @@ image_generator:process(clk,reset,x_cord,y_cord)
                 end if;
                 
                 if (((x_cord >= bar_location(bar_index)) and (x_cord < (bar_location(bar_index) + Bar_width))) and
-                    ((y_cord <= BAR_Start_y) and y_cord >= (BAR_start_y - test_bars(bar_index))))then 
+                    ((y_cord <= bar_start_height(bar_index)) and 
+                    y_cord >= (bar_start_height(bar_index) - test_bars(bar_index))))then 
                     -- which color is enabled depends on dip switch status
                     R <= (others => R_switch);
                     G <= (others => G_switch);
