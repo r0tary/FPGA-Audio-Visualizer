@@ -1,0 +1,19 @@
+vhdl xil_defaultlib  \
+"../../../../Visualizer beta/new/DFT_CLK_DIV.vhd" \
+"../../../../Visualizer beta/ip/DFT/sim/DFT.vhd" \
+"../../../../Visualizer beta/adau1761 driver vhdl/ADAU1761_interface.vhd" \
+"../../../../Visualizer beta/new/Testbench.vhd" \
+"../../../../Video/Design_TB_Sources/VGA.vhd" \
+"../../../../Video/Design_TB_Sources/Video_top.vhd" \
+"../../../../Visualizer beta/new/Visualizer_top.vhd" \
+"../../../../Visualizer beta/adau1761 driver vhdl/adau1761_configuraiton_data.vhd" \
+"../../../../Visualizer beta/adau1761 driver vhdl/adau1761_izedboard.vhd" \
+"../../../../Visualizer beta/adau1761 driver vhdl/audio_top.vhd" \
+"../../../../Video/Design_TB_Sources/clock_div.vhd" \
+"../../../../Visualizer beta/adau1761 driver vhdl/clocking.vhd" \
+"../../../../Visualizer beta/adau1761 driver vhdl/i2c.vhd" \
+"../../../../Visualizer beta/adau1761 driver vhdl/i2s_data_interface.vhd" \
+"../../../../Visualizer beta/adau1761 driver vhdl/i3c2.vhd" \
+"../../../../Video/Design_TB_Sources/pattern_generator.vhd" \
+
+nosort
