@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1684685506">
+  <File Type="BITSTR-BMM" Name="Visualizer_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Visualizer_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Visualizer_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="Visualizer_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Visualizer.tcl"/>
+  <File Type="OPT-TIMING" Name="Visualizer_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Visualizer_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="Visualizer_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Visualizer_reports.tcl"/>
+  <File Type="OPT-DRC" Name="Visualizer_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Visualizer.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Visualizer_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Visualizer_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Visualizer_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Visualizer_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Visualizer_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Visualizer_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Visualizer_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Visualizer_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Visualizer_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Visualizer_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Visualizer_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="Visualizer.bgn"/>
+  <File Type="PLACE-TIMING" Name="Visualizer_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Visualizer_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="Visualizer.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Visualizer_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Visualizer_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Visualizer_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="Visualizer.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="Visualizer_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Visualizer_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Visualizer_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Visualizer_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Visualizer_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Visualizer_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Visualizer.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="Visualizer_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="Visualizer.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Visualizer_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Visualizer_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="Visualizer.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Visualizer_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Visualizer_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Visualizer_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Visualizer_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Visualizer_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Visualizer_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Visualizer_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Visualizer_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Visualizer_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Visualizer_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Visualizer_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Visualizer_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Visualizer_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Visualizer_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Visualizer_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Visualizer_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Visualizer_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Visualizer_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Visualizer_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="Visualizer.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Visualizer_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="Visualizer.rbt"/>
+  <File Type="BITSTR-NKY" Name="Visualizer.nky"/>
+  <File Type="BG-DRC" Name="Visualizer.drc"/>
+  <File Type="RDI-RDI" Name="Visualizer.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/ADAU1761_interface.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Visualizer beta/adau1761 driver vhdl/ADAU1761_interface.vhd"/>
+        <Attr Name="ImportTime" Val="1684244003"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/DFT_TOP.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RAM_mag.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/VGA.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Video/Design_TB_Sources/VGA.vhd"/>
+        <Attr Name="ImportTime" Val="1684151561"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/Video_top.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Video/Design_TB_Sources/Video_top.vhd"/>
+        <Attr Name="ImportTime" Val="1684151716"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Visualizer beta/Wave_32_as4.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Visualizer beta/Wave_32_as4.vhd"/>
+        <Attr Name="ImportTime" Val="1684244003"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/adau1761_configuraiton_data.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Visualizer beta/adau1761 driver vhdl/adau1761_configuraiton_data.vhd"/>
+        <Attr Name="ImportTime" Val="1684244003"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/adau1761_izedboard.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Visualizer beta/adau1761 driver vhdl/adau1761_izedboard.vhd"/>
+        <Attr Name="ImportTime" Val="1684244003"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/audio_top.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Visualizer beta/adau1761 driver vhdl/audio_top.vhd"/>
+        <Attr Name="ImportTime" Val="1684244003"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/clock_div.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Video/Design_TB_Sources/clock_div.vhd"/>
+        <Attr Name="ImportTime" Val="1680020289"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/clocking.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Visualizer beta/adau1761 driver vhdl/clocking.vhd"/>
+        <Attr Name="ImportTime" Val="1684244003"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/DFT/counter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Visualizer beta/DFT/counter.vhd"/>
+        <Attr Name="ImportTime" Val="1684244003"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/i2c.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Visualizer beta/adau1761 driver vhdl/i2c.vhd"/>
+        <Attr Name="ImportTime" Val="1684244003"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/i2s_data_interface.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Visualizer beta/adau1761 driver vhdl/i2s_data_interface.vhd"/>
+        <Attr Name="ImportTime" Val="1684244003"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/i3c2.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Visualizer beta/adau1761 driver vhdl/i3c2.vhd"/>
+        <Attr Name="ImportTime" Val="1684244003"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/DFT/magnitude_calculator.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Visualizer beta/DFT/magnitude_calculator.vhd"/>
+        <Attr Name="ImportTime" Val="1684244003"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/pattern_generator.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Video/Design_TB_Sources/pattern_generator.vhd"/>
+        <Attr Name="ImportTime" Val="1684227707"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Visualizer beta/new/Visualizer_top.vhd"/>
+        <Attr Name="ImportTime" Val="1684244003"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Visualizer"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/XDC/zedboard_master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Zedboard-old-master/Resources/XDC/zedboard_master.xdc"/>
+        <Attr Name="ImportTime" Val="1678811108"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/VGA_EXAMPLE/script.tcl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Video/VGA_DRIVER_1/VGA_CODE_EXAMPLE.srcs/utils_1/imports/VGA_EXAMPLE/script.tcl"/>
+        <Attr Name="ImportTime" Val="1678810985"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="UsedInSteps" Val="impl_1;WRITE_BITSTREAM;TCL.PRE"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream" PreStepTclHook="$PSRCDIR/utils_1/imports/VGA_EXAMPLE/script.tcl"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="DFT"/>
+</GenRun>

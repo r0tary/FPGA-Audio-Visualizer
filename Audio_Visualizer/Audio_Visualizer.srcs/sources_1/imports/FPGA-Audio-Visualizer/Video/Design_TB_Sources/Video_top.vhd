@@ -33,6 +33,7 @@ entity Video_top is
         RST: in std_logic;                          -- Universal reset
         R_switch, G_switch, B_switch: in std_logic;
         mag_in: in std_logic_vector(4 downto 0);
+        magnitude_valid: in std_logic;
         --outputs
         we: out std_logic;
         bar_index: inout integer range 0 to 15;
@@ -75,6 +76,7 @@ architecture Behavioral of Video_top is
             y_cord : in integer range 0 to RES_Y-1;
             R_switch, G_switch, B_switch: in std_logic;
             bar_mag: in std_logic_vector (4 downto 0);
+            magnitude_valid: in std_logic;
             --Outputs
             we: out std_logic;
             RGB : out std_logic_vector(23 downto 0);
@@ -96,7 +98,7 @@ begin
                                 Hsync => Hsync, Vsync => Vsync, videoOn => video_active);
     
     Video_output: pattern_generator port map(clk => clk_25, reset => RST, video_active => video_active, we => we, bar_mag => mag_in,
-                                             x_cord => x_cord, y_cord => y_cord, RGB => RGB, bar_index => bar_index,
+                                             x_cord => x_cord, y_cord => y_cord, RGB => RGB, bar_index => bar_index, magnitude_valid => magnitude_valid,
                                              R_switch => R_switch, G_switch => G_switch, B_switch => B_switch); 
 
 end Behavioral;

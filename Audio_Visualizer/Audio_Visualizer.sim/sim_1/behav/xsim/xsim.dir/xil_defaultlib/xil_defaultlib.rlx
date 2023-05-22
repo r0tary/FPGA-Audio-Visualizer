@@ -2,11 +2,11 @@
 2019.1
 Sep  4 2019
 09:57:52
-C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sim_1/new/Visualizer_TB.vhd,1684515976,vhdl,,,,visualizer_tb,,,,,,,,
+C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sim_1/new/Visualizer_TB.vhd,1684675972,vhdl,,,,visualizer_tb,,,,,,,,
 C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/DFT/counter.vhd,1684244003,vhdl,,,,counter,,,,,,,,
 C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/DFT/magnitude_calculator.vhd,1684244003,vhdl,,,,magnitude_calculator,,,,,,,,
 C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/VGA.vhd,1684423120,vhdl,,,,vga,,,,,,,,
-C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/Video_top.vhd,1684515389,vhdl,,,,video_top,,,,,,,,
+C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/Video_top.vhd,1684675865,vhdl,,,,video_top,,,,,,,,
 C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/clock_div.vhd,1684248424,vhdl,,,,clk_div,,,,,,,,
 C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/pattern_generator.vhd,1684434362,vhdl,,,,pattern_generator,,,,,,,,
 C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/ADAU1761_interface.vhd,1684244003,vhdl,,,,adau1761_interface,,,,,,,,
@@ -17,8 +17,8 @@ C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visuali
 C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/i2c.vhd,1684244003,vhdl,,,,i2c,,,,,,,,
 C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/i2s_data_interface.vhd,1684244003,vhdl,,,,i2s_data_interface,,,,,,,,
 C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/i3c2.vhd,1684244003,vhdl,,,,i3c2,,,,,,,,
-C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/DFT_TOP.vhd,1684515391,vhdl,,,,dft_top,,,,,,,,
-C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd,1684515182,vhdl,,,,visualizer,,,,,,,,
+C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/DFT_TOP.vhd,1684674256,vhdl,,,,dft_top,,,,,,,,
+C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd,1684672591,vhdl,,,,visualizer,,,,,,,,
 C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/Visualizer beta/Wave_32_as4.vhd,1684244003,vhdl,,,,wave_32_as4,,,,,,,,
 C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/ip/DFT/sim/DFT.vhd,1684244003,vhdl,,,,dft,,,,,,,,
-C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/new/RAM_mag.vhd,1684515776,vhdl,,,,ram_mag,,,,,,,,
+C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/new/RAM_mag.vhd,1684671694,vhdl,,,,ram_mag,,,,,,,,

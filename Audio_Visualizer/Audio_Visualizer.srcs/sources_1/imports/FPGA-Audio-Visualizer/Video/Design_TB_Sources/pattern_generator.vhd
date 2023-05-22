@@ -42,6 +42,7 @@ entity pattern_generator is
         y_cord : in integer range 0 to 480-1;
         R_switch, G_switch, B_switch: in std_logic;
         bar_mag: in std_logic_vector (4 downto 0);
+        magnitude_valid: in std_logic;
         --outputs
         we: out std_logic;
         RGB : out std_logic_vector(23 downto 0);
@@ -82,6 +83,9 @@ image_generator:process(clk,reset,x_cord,y_cord)
                     bar_index <= bar_index + 1;
                 end if;
                 
+                if (magnitude_valid = '1') then
+                
+                
                 if (((x_cord >= bar_location(bar_index)) and (x_cord < (bar_location(bar_index) + Bar_width))) and
                     ((y_cord <= bar_start_height(bar_index)) and 
                     y_cord >= (bar_start_height(bar_index) - bar_mag))) then
@@ -96,6 +100,18 @@ image_generator:process(clk,reset,x_cord,y_cord)
                     G <= (others => '0');
                     B <= (others => '0');
                 end if;
+                end if;
+                --if (magnitude_valid = '1') then
+                    --we <= '0';
+                    --R <= (others => '0');
+                    --G <= (others => '0');
+                    --B <= (others => '1');
+                --else
+                    --we <= '1';
+                    --R <= (others => '0');
+                    --G <= (others => '0');
+                    --B <= (others => '0');
+                --end if;
             else
                 bar_index <= 0;
                 R <= (others => '0');

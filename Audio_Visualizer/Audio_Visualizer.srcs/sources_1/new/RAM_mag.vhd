@@ -27,14 +27,16 @@ entity RAM_mag is
     Port ( clk, reset : in STD_LOGIC;
            we : in STD_LOGIC;
            addr_r : in integer range 0 to 15;
-           addr_w : in integer range 0 to 15 ;
+           addr_w : in integer range 0 to 15;
            din : in std_logic_vector(4 downto 0);
            dout : out std_logic_vector(4 downto 0));
 end RAM_mag;
 
 architecture Behavioral of RAM_mag is
     type ram_type is array (15 downto 0) of std_logic_vector (4 downto 0);
-    signal ram_single_port : ram_type;
+    signal ram_single_port : ram_type := ("00000","00000","00000","00000","00000",
+                                            "00000","00000","00000","00000","00000",
+                                            "00000","00000","00000","00000","00000","00000");
 begin
   process(clk)
   begin 

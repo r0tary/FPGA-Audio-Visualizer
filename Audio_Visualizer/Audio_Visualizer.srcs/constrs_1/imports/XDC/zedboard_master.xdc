@@ -66,20 +66,20 @@
 # ----------------------------------------------------------------------------
 # Audio Codec - Bank 13
 # ---------------------------------------------------------------------------- 
-#set_property PACKAGE_PIN AB1 [get_ports {AC_ADR0}];  # "AC-ADR0"
-#set_property PACKAGE_PIN Y5  [get_ports {AC_ADR1}];  # "AC-ADR1"
-#set_property PACKAGE_PIN Y8  [get_ports {SDATA_O}];  # "AC-GPIO0"
-#set_property PACKAGE_PIN AA7 [get_ports {SDATA_I}];  # "AC-GPIO1"
-#set_property PACKAGE_PIN AA6 [get_ports {BCLK_O}];  # "AC-GPIO2"
-#set_property PACKAGE_PIN Y6  [get_ports {LRCLK_O}];  # "AC-GPIO3"
-#set_property PACKAGE_PIN AB2 [get_ports {MCLK_O}];  # "AC-MCLK"
-#set_property PACKAGE_PIN AB4 [get_ports {iic_rtl_scl_io}];  # "AC-SCK"
-#set_property PACKAGE_PIN AB5 [get_ports {iic_rtl_sda_io}];  # "AC-SDA"
+set_property PACKAGE_PIN AB1 [get_ports {AC_ADR0}];  # "AC-ADR0"
+set_property PACKAGE_PIN Y5  [get_ports {AC_ADR1}];  # "AC-ADR1"
+set_property PACKAGE_PIN Y8  [get_ports {AC_GPIO0}];  # "AC-GPIO0"
+set_property PACKAGE_PIN AA7 [get_ports {AC_GPIO1}];  # "AC-GPIO1"
+set_property PACKAGE_PIN AA6 [get_ports {AC_GPIO2}];  # "AC-GPIO2"
+set_property PACKAGE_PIN Y6  [get_ports {AC_GPIO3}];  # "AC-GPIO3"
+set_property PACKAGE_PIN AB2 [get_ports {AC_MCLK}];  # "AC-MCLK"
+set_property PACKAGE_PIN AB4 [get_ports {AC_SCK}];  # "AC-SCK"
+set_property PACKAGE_PIN AB5 [get_ports {AC_SDA}];  # "AC-SDA"
 
 # ----------------------------------------------------------------------------
 # Clock Source - Bank 13
 # ---------------------------------------------------------------------------- 
-set_property PACKAGE_PIN Y9 [get_ports {clk}];  # "GCLK"
+set_property PACKAGE_PIN Y9 [get_ports {clk_100}];  # "GCLK"
 
 # ----------------------------------------------------------------------------
 # JA Pmod - Bank 13 
@@ -87,7 +87,7 @@ set_property PACKAGE_PIN Y9 [get_ports {clk}];  # "GCLK"
 #set_property PACKAGE_PIN Y11  [get_ports {JA1}];  # "JA1"
 #set_property PACKAGE_PIN AA8  [get_ports {JA10}];  # "JA10"
 #set_property PACKAGE_PIN AA11 [get_ports {JA2}];  # "JA2"
-#set_property PACKAGE_PIN Y10  [get_ports {JA3}];  # "JA3"
+#set_property PACKAGE_PIN Y10  [get_ports {JA3}f];  # "JA3"
 #set_property PACKAGE_PIN AA9  [get_ports {JA4}];  # "JA4"
 #set_property PACKAGE_PIN AB11 [get_ports {JA7}];  # "JA7"
 #set_property PACKAGE_PIN AB10 [get_ports {JA8}];  # "JA8"
@@ -184,25 +184,25 @@ set_property PACKAGE_PIN Y9 [get_ports {clk}];  # "GCLK"
 # ----------------------------------------------------------------------------
 # VGA Output - Bank 33
 # ---------------------------------------------------------------------------- 
-set_property PACKAGE_PIN Y21  [get_ports {B[0]}];  # "VGA-B1"
-set_property PACKAGE_PIN Y20  [get_ports {B[1]}];  # "VGA-B2"
-set_property PACKAGE_PIN AB20 [get_ports {B[2]}];  # "VGA-B3"
-set_property PACKAGE_PIN AB19 [get_ports {B[3]}];  # "VGA-B4"
-set_property PACKAGE_PIN AB22 [get_ports {G[0]}];  # "VGA-G1"
-set_property PACKAGE_PIN AA22 [get_ports {G[1]}];  # "VGA-G2"
-set_property PACKAGE_PIN AB21 [get_ports {G[2]}];  # "VGA-G3"
-set_property PACKAGE_PIN AA21 [get_ports {G[3]}];  # "VGA-G4"
+set_property PACKAGE_PIN Y21  [get_ports {RGB[20]}];  # "VGA-B1"
+set_property PACKAGE_PIN Y20  [get_ports {RGB[21]}];  # "VGA-B2"
+set_property PACKAGE_PIN AB20 [get_ports {RGB[22]}];  # "VGA-B3"
+set_property PACKAGE_PIN AB19 [get_ports {RGB[23]}];  # "VGA-B4"
+set_property PACKAGE_PIN AB22 [get_ports {RGB[12]}];  # "VGA-G1"
+set_property PACKAGE_PIN AA22 [get_ports {RGB[13]}];  # "VGA-G2"
+set_property PACKAGE_PIN AB21 [get_ports {RGB[14]}];  # "VGA-G3"
+set_property PACKAGE_PIN AA21 [get_ports {RGB[15]}];  # "VGA-G4"
 set_property PACKAGE_PIN AA19 [get_ports {Hsync}];  # "VGA-HS"
-set_property PACKAGE_PIN V20  [get_ports {R[0]}];  # "VGA-R1"
-set_property PACKAGE_PIN U20  [get_ports {R[1]}];  # "VGA-R2"
-set_property PACKAGE_PIN V19  [get_ports {R[2]}];  # "VGA-R3"
-set_property PACKAGE_PIN V18  [get_ports {R[3]}];  # "VGA-R4"
+set_property PACKAGE_PIN V20  [get_ports {RGB[4]}];  # "VGA-R1"
+set_property PACKAGE_PIN U20  [get_ports {RGB[5]}];  # "VGA-R2"
+set_property PACKAGE_PIN V19  [get_ports {RGB[6]}];  # "VGA-R3"
+set_property PACKAGE_PIN V18  [get_ports {RGB[7]}];  # "VGA-R4"
 set_property PACKAGE_PIN Y19  [get_ports {Vsync}];  # "VGA-VS"
 
 # ----------------------------------------------------------------------------
 # User Push Buttons - Bank 34
 # ---------------------------------------------------------------------------- 
-#set_property PACKAGE_PIN P16 [get_ports {BTNC}];  # "BTNC"
+set_property PACKAGE_PIN P16 [get_ports {reset}];  # "BTNC"
 #set_property PACKAGE_PIN R16 [get_ports {BTND}];  # "BTND"
 #set_property PACKAGE_PIN N15 [get_ports {BTNL}];  # "BTNL"
 #set_property PACKAGE_PIN R18 [get_ports {BTNR}];  # "BTNR"

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1684685506">
+  <File Type="PA-TCL" Name="Visualizer.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Visualizer_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="Visualizer_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Visualizer.vds"/>
+  <File Type="RDS-UTIL" Name="Visualizer_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Visualizer_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Visualizer.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Visualizer_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Visualizer_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/ADAU1761_interface.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Visualizer beta/adau1761 driver vhdl/ADAU1761_interface.vhd"/>
+        <Attr Name="ImportTime" Val="1684244003"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/DFT_TOP.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RAM_mag.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/VGA.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Video/Design_TB_Sources/VGA.vhd"/>
+        <Attr Name="ImportTime" Val="1684151561"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/Video_top.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Video/Design_TB_Sources/Video_top.vhd"/>
+        <Attr Name="ImportTime" Val="1684151716"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Visualizer beta/Wave_32_as4.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Visualizer beta/Wave_32_as4.vhd"/>
+        <Attr Name="ImportTime" Val="1684244003"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/adau1761_configuraiton_data.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Visualizer beta/adau1761 driver vhdl/adau1761_configuraiton_data.vhd"/>
+        <Attr Name="ImportTime" Val="1684244003"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/adau1761_izedboard.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Visualizer beta/adau1761 driver vhdl/adau1761_izedboard.vhd"/>
+        <Attr Name="ImportTime" Val="1684244003"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/audio_top.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Visualizer beta/adau1761 driver vhdl/audio_top.vhd"/>
+        <Attr Name="ImportTime" Val="1684244003"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/clock_div.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Video/Design_TB_Sources/clock_div.vhd"/>
+        <Attr Name="ImportTime" Val="1680020289"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/clocking.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Visualizer beta/adau1761 driver vhdl/clocking.vhd"/>
+        <Attr Name="ImportTime" Val="1684244003"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/DFT/counter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Visualizer beta/DFT/counter.vhd"/>
+        <Attr Name="ImportTime" Val="1684244003"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/i2c.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Visualizer beta/adau1761 driver vhdl/i2c.vhd"/>
+        <Attr Name="ImportTime" Val="1684244003"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/i2s_data_interface.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Visualizer beta/adau1761 driver vhdl/i2s_data_interface.vhd"/>
+        <Attr Name="ImportTime" Val="1684244003"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/i3c2.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Visualizer beta/adau1761 driver vhdl/i3c2.vhd"/>
+        <Attr Name="ImportTime" Val="1684244003"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/DFT/magnitude_calculator.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Visualizer beta/DFT/magnitude_calculator.vhd"/>
+        <Attr Name="ImportTime" Val="1684244003"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/pattern_generator.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Video/Design_TB_Sources/pattern_generator.vhd"/>
+        <Attr Name="ImportTime" Val="1684227707"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Visualizer beta/new/Visualizer_top.vhd"/>
+        <Attr Name="ImportTime" Val="1684244003"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Visualizer"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/XDC/zedboard_master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Zedboard-old-master/Resources/XDC/zedboard_master.xdc"/>
+        <Attr Name="ImportTime" Val="1678811108"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/VGA_EXAMPLE/script.tcl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Video/VGA_DRIVER_1/VGA_CODE_EXAMPLE.srcs/utils_1/imports/VGA_EXAMPLE/script.tcl"/>
+        <Attr Name="ImportTime" Val="1678810985"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="UsedInSteps" Val="impl_1;WRITE_BITSTREAM;TCL.PRE"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="DFT"/>
+</GenRun>

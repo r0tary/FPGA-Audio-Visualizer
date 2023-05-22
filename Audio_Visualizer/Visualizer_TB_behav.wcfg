@@ -10,13 +10,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="22500000000000fs"></ZoomStartTime>
-      <ZoomEndTime time="32960000000001fs"></ZoomEndTime>
-      <Cursor1Time time="26240000000000fs"></Cursor1Time>
+      <ZoomStartTime time="6339779559117fs"></ZoomStartTime>
+      <ZoomEndTime time="58705831663329fs"></ZoomEndTime>
+      <Cursor1Time time="13811402806000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="175"></NameColumnWidth>
-      <ValueColumnWidth column_width="87"></ValueColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="47" />
    <wvobject fp_name="/Visualizer_TB/RAM_DFT_mag/ram_single_port" type="array">
@@ -79,6 +79,10 @@
       <obj_property name="ElementShortName">clk_100_buffered</obj_property>
       <obj_property name="ObjectShortName">clk_100_buffered</obj_property>
    </wvobject>
+   <wvobject fp_name="/Visualizer_TB/MAGNITUDE_VALID" type="logic">
+      <obj_property name="ElementShortName">MAGNITUDE_VALID</obj_property>
+      <obj_property name="ObjectShortName">MAGNITUDE_VALID</obj_property>
+   </wvobject>
    <wvobject fp_name="/Visualizer_TB/counter" type="array">
       <obj_property name="ElementShortName">counter[5:0]</obj_property>
       <obj_property name="ObjectShortName">counter[5:0]</obj_property>
@@ -134,10 +138,6 @@
    <wvobject fp_name="/Visualizer_TB/XK_RE_Probe" type="array">
       <obj_property name="ElementShortName">XK_RE_Probe[17:0]</obj_property>
       <obj_property name="ObjectShortName">XK_RE_Probe[17:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Visualizer_TB/MAGNITUDE_VALID" type="logic">
-      <obj_property name="ElementShortName">MAGNITUDE_VALID</obj_property>
-      <obj_property name="ObjectShortName">MAGNITUDE_VALID</obj_property>
    </wvobject>
    <wvobject fp_name="/Visualizer_TB/AC_MCLK" type="logic">
       <obj_property name="ElementShortName">AC_MCLK</obj_property>

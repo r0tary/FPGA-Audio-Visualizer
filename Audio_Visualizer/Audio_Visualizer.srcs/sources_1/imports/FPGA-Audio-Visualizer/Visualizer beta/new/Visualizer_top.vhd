@@ -22,7 +22,8 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
-
+library UNISIM;
+use UNISIM.VComponents.all; 
 
 entity Visualizer is
     Port(
@@ -55,6 +56,7 @@ component DFT_TOP
         magn_out_highest: out std_logic_vector (4 downto 0);
         MAGNITUDE_VALID : inout std_logic;
         XK_RE_Probe: out signed (17 downto 0);
+        we: in std_logic;
         ADDR_dft: inout integer
     );
 END component;
@@ -111,6 +113,7 @@ component Video_top
         RST: in std_logic;                          -- Universal reset
         R_switch, G_switch, B_switch: in std_logic;
         mag_in: in std_logic_vector(4 downto 0);
+        magnitude_valid: in std_logic;
         --outputs
         bar_index: inout integer;
         we: out std_logic;
@@ -167,6 +170,7 @@ end component;
     signal we: std_logic;
     signal addr_r: integer;
     signal addr_w: integer;
+    
 begin
 
 Audio : audio_top port map (
@@ -195,11 +199,11 @@ Audio : audio_top port map (
 
 DFT: DFT_top port map (left_channel_in => audio18_l, right_channel_in => audio18_r, clk_100 => clk_100,
                         magn_out_highest => din, magnitude_valid => magnitude_valid,
-                        XK_RE_PROBE => XK_RE_PROBE, addr_dft => addr_w);
+                        XK_RE_PROBE => XK_RE_PROBE, addr_dft => addr_w, we => we);
                         
 Video: Video_top port map(clk => clk_100, RST => reset, mag_in => dout, bar_index => addr_r,
                              R_switch => R_switch, G_switch => G_switch, B_switch => B_switch,
-                             Hsync => Hsync, Vsync => Vsync, RGB => RGB); 
+                             Hsync => Hsync, Vsync => Vsync, RGB => RGB, magnitude_valid => magnitude_valid); 
 
 SINE: Wave_32_as4 Port Map (clk => clk_100, reset => reset, selected_btn => "0001", DATA => DATA,
                             strobe => strobe, count_reader => count_reader);
@@ -207,9 +211,38 @@ SINE: Wave_32_as4 Port Map (clk => clk_100, reset => reset, selected_btn => "000
 RAM_DFT_mag: RAM_mag port map(clk => clk_100, reset => reset, we => we, addr_r => addr_r, addr_w => addr_w, din => din, dout => dout);
                             
 
---clk <= not clk after 5 ns when finished /= '1' else '0';
-audio18_l (17 downto 0) <= DATA(23 downto 6);
-audio18_r (17 downto 0) <= DATA(23 downto 6);
+     --loopback "line in" data to headphone output
+    process (clk_100)
+    begin
+        if (clk_100'event and clk_100 = '1') then
+            
+            
+            hphone_valid <= '0';
+            hphone_l <= (others => '0');
+            hphone_r <= (others => '0');
+            
+            
+            if new_sample = '1' then
+                counter <= counter + 1;
+                
+                audio18_l (17 downto 0) <= line_in_l(23 downto 6);
+                audio18_r (17 downto 0) <= line_in_r(23 downto 6);
+                hphone_valid <= '1';
+                hphone_l <= line_in_l ;
+                hphone_r <= line_in_r;
+            end if;
+            
+        end if;
+    end process;
 
+--clk <= not clk after 5 ns when finished /= '1' else '0';
+
+ 
+ -- global clock buffer for the clock signal
+    BUFG_inst : BUFG
+    port map (
+       O => clk_100_buffered,   -- 1-bit output: Clock output
+       I => clk_100             -- 1-bit input: Clock input
+    );  
 
 end Visualizer_Behavior;

@@ -22,6 +22,9 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
+use std.textio.all;
+use ieee.std_logic_textio.all;
+
 
 entity Visualizer_TB is
 --  Port ( );
@@ -59,6 +62,7 @@ architecture Behavioral of Visualizer_TB is
             magn_out_highest: out std_logic_vector (4 downto 0);
             MAGNITUDE_VALID : inout std_logic;
             XK_RE_Probe: out signed (17 downto 0);
+            we: in std_logic;
             ADDR_dft: inout integer
         );
     END component;
@@ -88,7 +92,7 @@ architecture Behavioral of Visualizer_TB is
             R_switch, G_switch, B_switch: in std_logic;
             mag_in: in std_logic_vector(4 downto 0);
             --outputs
-            bar_index: inout integer; 
+            bar_index: inout integer range 0 to 15; 
             we: out std_logic;
             Hsync: inout std_logic; 
             Vsync: out std_logic;                       -- Horizontal and Vertical sync
@@ -112,6 +116,7 @@ architecture Behavioral of Visualizer_TB is
     signal clk_100: std_logic := '0';
     --signal clk_25: std_logic := '1';
     constant clock_period: time := 10ns;
+    
     
     --for VGA entity
     signal Hsync, Vsync: std_logic := '0';
@@ -142,7 +147,7 @@ architecture Behavioral of Visualizer_TB is
     signal Strobe :  std_logic;
     signal count_reader : std_logic_vector(9 downto 0);
     signal finished: std_logic;
-    signal magn_out: std_logic_vector (4 downto 0);
+    --signal magn_out: std_logic_vector (4 downto 0);
     signal XK_RE_Probe: signed (17 downto 0);
     signal MAGNITUDE_VALID : std_logic;
     --signal addr_dft: integer := 0;
@@ -175,13 +180,12 @@ architecture Behavioral of Visualizer_TB is
     signal din, dout: std_logic_vector(4 downto 0);
     signal addr_r: integer range 0 to 15 := 0;
     signal addr_w: integer range 0 to 15 := 0;
-    
 begin
     DFT: DFT_top port map (left_channel_in => audio18_l, right_channel_in => audio18_r, clk_100 => clk_100,
                         magn_out_highest => din, magnitude_valid => magnitude_valid,
-                        XK_RE_PROBE => XK_RE_PROBE, addr_dft => addr_w );
+                        XK_RE_PROBE => XK_RE_PROBE, addr_dft => addr_w, we => we );
                         
-    Video: Video_top port map(clk => clk_100, RST => reset, mag_in => dout, we => we,
+    Video: Video_top port map(clk => clk_100, RST => reset, mag_in => dout, we => we, bar_index => addr_r,
                              R_switch => R_switch, G_switch => G_switch, B_switch => B_switch,
                              Hsync => Hsync, Vsync => Vsync, RGB => RGB); 
 
@@ -190,12 +194,14 @@ begin
 
     RAM_DFT_mag: RAM_mag port map(clk => clk_100, reset => reset, we => we, addr_r => addr_r, addr_w => addr_w, din => din, dout => dout);
     
-    uut: Visualizer port map(clk_100 => clk_100, reset => reset, 
-                                R_switch => R_switch, G_switch => G_switch, B_switch => B_switch,
-                                Hsync => Hsync, Vsync => Vsync, RGB => RGB,
-                                AC_MCLK => AC_MCLK, AC_ADR0 => AC_ADR0, AC_ADR1 => AC_ADR1, AC_SCK => AC_SCK, AC_SDA => AC_SDA,
-                                AC_GPIO0 => AC_GPIO0, AC_GPIO1 => AC_GPIO1, AC_GPIO2 => AC_GPIO2, AC_GPIO3 => AC_GPIO3);
-
+    --uut: Visualizer port map(clk_100 => clk_100, reset => reset, 
+    --                            R_switch => R_switch, G_switch => G_switch, B_switch => B_switch,
+    --                            Hsync => Hsync, Vsync => Vsync, RGB => RGB,
+    --                            AC_MCLK => AC_MCLK, AC_ADR0 => AC_ADR0, AC_ADR1 => AC_ADR1, AC_SCK => AC_SCK, AC_SDA => AC_SDA,
+    --                            AC_GPIO0 => AC_GPIO0, AC_GPIO1 => AC_GPIO1, AC_GPIO2 => AC_GPIO2, AC_GPIO3 => AC_GPIO3);
+   
+    audio18_l (17 downto 0) <= DATA(23 downto 6);
+    audio18_r (17 downto 0) <= DATA(23 downto 6);
     --Simulate a 100MHz clock
     clock_process: process
     begin
@@ -204,5 +210,6 @@ begin
         clk_100 <= '1';
         wait for clock_period/2;
     end process;
+    
 
 end Behavioral;

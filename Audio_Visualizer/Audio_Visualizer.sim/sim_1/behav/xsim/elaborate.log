@@ -19,6 +19,7 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
 Compiling package dft_v4_1_1.dft_types
@@ -31,7 +32,6 @@ Compiling package ieee.vital_timing
 Compiling package ieee.vital_primitives
 Compiling package unisim.vpkg
 Compiling package ieee.std_logic_signed
-Compiling package ieee.std_logic_textio
 Compiling package ieee.math_real
 Compiling package dft_v4_1_1.coefmem_defs
 Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,do...]
@@ -207,19 +207,5 @@ Compiling architecture behavioral of entity xil_defaultlib.pattern_generator [pa
 Compiling architecture behavioral of entity xil_defaultlib.Video_top [video_top_default]
 Compiling architecture behavioral of entity xil_defaultlib.Wave_32_as4 [wave_32_as4_default]
 Compiling architecture behavioral of entity xil_defaultlib.RAM_mag [ram_mag_default]
-Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
-Compiling architecture ibufg_v of entity unisim.IBUFG [\IBUFG(1,9)(1,1)(1,7)\]
-Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=49.5...]
-Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
-Compiling architecture xilinx of entity xil_defaultlib.clocking [clocking_default]
-Compiling architecture iobuf_v of entity unisim.IOBUF [\IOBUF(1,7)(1,4)\]
-Compiling architecture behavioral of entity xil_defaultlib.adau1761_configuraiton_data [adau1761_configuraiton_data_defa...]
-Compiling architecture behavioral of entity xil_defaultlib.i3c2 [\i3c2(clk_divide="01111000")\]
-Compiling architecture behavioral of entity xil_defaultlib.i2c [i2c_default]
-Compiling architecture behavioral of entity xil_defaultlib.ADAU1761_interface [adau1761_interface_default]
-Compiling architecture behavioral of entity xil_defaultlib.i2s_data_interface [i2s_data_interface_default]
-Compiling architecture behavioral of entity xil_defaultlib.adau1761_izedboard [adau1761_izedboard_default]
-Compiling architecture behavioral of entity xil_defaultlib.audio_top [audio_top_default]
-Compiling architecture visualizer_behavior of entity xil_defaultlib.Visualizer [visualizer_default]
 Compiling architecture behavioral of entity xil_defaultlib.visualizer_tb
 Built simulation snapshot Visualizer_TB_behav

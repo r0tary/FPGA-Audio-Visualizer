@@ -1,5 +1,2 @@
 Vivado Simulator 2019.1
 Time resolution is 1 ps
-Failure: completed...ignore following error messages
-Time: 16803900 ns  Iteration: 2  Process: /VGA_tb/record_values  File: C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Video/VGA_DRIVER_1/VGA_CODE_EXAMPLE.srcs/sim_1/new/VGA_tb.vhd
-$finish called at time : 16803900 ns : File "C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Video/VGA_DRIVER_1/VGA_CODE_EXAMPLE.srcs/sim_1/new/VGA_tb.vhd" Line 143

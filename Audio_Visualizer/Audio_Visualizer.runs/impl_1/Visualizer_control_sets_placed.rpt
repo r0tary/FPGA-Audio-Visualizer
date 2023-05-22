@@ -1,0 +1,118 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
+| Date         : Sun May 21 18:14:28 2023
+| Host         : DESKTOP-VUE9GRE running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Visualizer_control_sets_placed.rpt
+| Design       : Visualizer
+| Device       : xc7z020
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    40 |
+|    Minimum number of control sets                        |    40 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   141 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    40 |
+| >= 0 to < 4        |     7 |
+| >= 4 to < 6        |    11 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    16 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              79 |           37 |
+| No           | No                    | Yes                    |              98 |           32 |
+| No           | Yes                   | No                     |              67 |           17 |
+| Yes          | No                    | No                     |             386 |          115 |
+| Yes          | No                    | Yes                    |              24 |           10 |
+| Yes          | Yes                   | No                     |              37 |           12 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------+-----------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|        Clock Signal        |                                               Enable Signal                                               |                                                     Set/Reset Signal                                                    | Slice Load Count | Bel Load Count |
++----------------------------+-----------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  DFT/clk_100_100k/CLK      | DFT/DFT_block/U0/i_synth/i/size_lut_u/table_reg[N]                                                        |                                                                                                                         |                1 |              1 |
+|  Hsync_OBUF_BUFG           | Video/VGA_timings/Vsync0                                                                                  | Video/VGA_timings/Vsync05_out                                                                                           |                1 |              1 |
+|  Audio/i_clocking/CLK_48   | Audio/Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/i2c_scl_i_1_n_0                                          |                                                                                                                         |                1 |              1 |
+|  Audio/i_clocking/CLK_48   | Audio/Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/i2c_sda_t_i_1_n_0                                        |                                                                                                                         |                1 |              1 |
+|  Hsync_OBUF_BUFG           |                                                                                                           |                                                                                                                         |                1 |              1 |
+|  hPos_reg[31]_i_2_n_0      |                                                                                                           |                                                                                                                         |                1 |              1 |
+|  DFT/clk_100_100k/CLK      | DFT/DFT_block/U0/i_synth/i/control_u/findAddrA_u/gen_counter_v5.idx_counter_u/idx_big_counter/ce_valid    |                                                                                                                         |                2 |              3 |
+|  Audio/i_clocking/CLK_48   | Audio/Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/state[3]_i_1_n_0                                         |                                                                                                                         |                3 |              4 |
+|  DFT/clk_100_100k/CLK      | DFT/DFT_block/U0/i_synth/i/control_u/wait_r423_counter[3]_i_1_n_0                                         |                                                                                                                         |                3 |              4 |
+|  Audio/i_clocking/CLK_48   | Audio/Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/i2c_bits_left0                                           |                                                                                                                         |                2 |              4 |
+|  hPos_reg[31]_i_2_n_0      | Video/Video_output/bar_index0                                                                             | Video/Video_output/bar_index[3]_i_1_n_0                                                                                 |                1 |              4 |
+|  clk_100_buffered          |                                                                                                           |                                                                                                                         |                1 |              5 |
+|  DFT/clk_100_100k/CLK      | DFT/DFT_block/U0/i_synth/i/control_u/addr_radix                                                           |                                                                                                                         |                2 |              5 |
+|  DFT/clk_100_100k/CLK      | DFT/DFT_block/U0/i_synth/i/control_u/FSM_sequential_dft_state[4]_i_1_n_0                                  |                                                                                                                         |                4 |              5 |
+|  DFT/clk_100_100k/CLK      | DFT/DFT_block/U0/i_synth/i/control_u/next_stage[2]_i_1_n_0                                                |                                                                                                                         |                2 |              5 |
+|  DFT/clk_100_100k/CLK      | DFT/DFT_block/U0/i_synth/i/control_u/wait_r5_counter0                                                     |                                                                                                                         |                2 |              5 |
+|  DFT/clk_100_100k/CLK      | DFT/DFT_block/U0/i_synth/i/control_u/findAddrA_u/gen_counter_v5.idx_counter_u/idx3_r24/CE                 | DFT/DFT_block/U0/i_synth/i/control_u/findAddrA_u/gen_counter_v5.idx_counter_u/idx5_r24/zero_allowed.value[4]_i_1__1_n_0 |                2 |              5 |
+|  DFT/clk_100_100k/CLK      | DFT/counter_block/count_enable                                                                            | DFT/counter_block/counter_value_temp[4]_i_1_n_0                                                                         |                2 |              5 |
+|  DFT/clk_100_100k/CLK      | DFT/DFT_block/U0/i_synth/i/control_u/findAddrA_u/gen_counter_v5.idx_counter_u/idx5_r24/npoint5i_reg[4][0] | DFT/DFT_block/U0/i_synth/i/control_u/findAddrA_u/gen_counter_v5.idx_counter_u/idx2_r24/SR[0]                            |                2 |              6 |
+|  DFT/clk_100_100k/CLK      | DFT/DFT_block/U0/i_synth/i/control_u/findAddrA_u/gen_counter_v5.idx_counter_u/idx_big_counter/ce_valid    | DFT/DFT_block/U0/i_synth/i/control_u/findAddrA_u/gen_counter_v5.idx_counter_u/idx3_r24/zero_allowed.value[7]_i_1_n_0    |                3 |              8 |
+|  Audio/i_clocking/CLK_48   | Audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/i2s_lr_last_i_1_n_0                                 | Audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out[39]_i_1_n_0                                                |                1 |              8 |
+|  Audio/i_clocking/CLK_48   | Audio/Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount[7]_i_1_n_0                                      |                                                                                                                         |                5 |              8 |
+|  Audio/i_clocking/CLK_48   | Audio/Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/i2c_data[8]_i_1_n_0                                      |                                                                                                                         |                4 |              9 |
+|  Audio/i_clocking/CLK_48   |                                                                                                           |                                                                                                                         |                9 |             14 |
+|  Audio/i_clocking/CLK_48   | Audio/Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/delay[15]_i_1_n_0                                        |                                                                                                                         |                6 |             16 |
+|  Video/VGA_timings/videoOn |                                                                                                           | reset_IBUF                                                                                                              |               10 |             19 |
+|  Audio/i_clocking/CLK_48   | Audio/Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/pcnext[9]_i_1_n_0                                        |                                                                                                                         |                5 |             20 |
+|  hPos_reg[31]_i_2_n_0      | DFT/counter_block/terminal_count_reg_0                                                                    | reset_IBUF                                                                                                              |               10 |             24 |
+|  DFT/clk_100_100k/CLK      |                                                                                                           |                                                                                                                         |               15 |             26 |
+|  Hsync_OBUF_BUFG           |                                                                                                           | reset_IBUF                                                                                                              |                8 |             32 |
+|  hPos_reg[31]_i_2_n_0      |                                                                                                           | reset_IBUF                                                                                                              |               15 |             33 |
+|  clk_100_IBUF_BUFG         |                                                                                                           | reset_IBUF                                                                                                              |                9 |             33 |
+|  clk_100_IBUF_BUFG         |                                                                                                           |                                                                                                                         |               11 |             42 |
+|  clk_100_buffered          | Audio/new_sample_100                                                                                      |                                                                                                                         |               10 |             48 |
+|  clk_100_IBUF_BUFG         |                                                                                                           | Audio/new_sample_reg_0                                                                                                  |                7 |             48 |
+|  clk_100_buffered          | hphone_valid                                                                                              |                                                                                                                         |               11 |             48 |
+|  Audio/i_clocking/CLK_48   | Audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/audio_l_out_n_0                                     |                                                                                                                         |               10 |             48 |
+|  Audio/i_clocking/CLK_48   | Audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/i2s_lr_last_i_1_n_0                                 |                                                                                                                         |               14 |             50 |
+|  Audio/i_clocking/CLK_48   | Audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_in[126]_i_1_n_0                                  |                                                                                                                         |               13 |             52 |
+|  DFT/clk_100_100k/CLK      | DFT/CE                                                                                                    |                                                                                                                         |               14 |             64 |
++----------------------------+-----------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+
