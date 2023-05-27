@@ -1,30 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1685012092">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1685193592">
   <File Type="BITSTR-BMM" Name="Visualizer_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Visualizer_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Visualizer_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="Visualizer_power_routed.rpt"/>
   <File Type="PA-TCL" Name="Visualizer.tcl"/>
+  <File Type="OPT-TIMING" Name="Visualizer_timing_summary_opted.rpt"/>
   <File Type="OPT-DCP" Name="Visualizer_opt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="Visualizer_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="Visualizer_reports.tcl"/>
   <File Type="OPT-DRC" Name="Visualizer_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="Visualizer.hwdef"/>
   <File Type="PWROPT-DCP" Name="Visualizer_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Visualizer_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Visualizer_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="Visualizer_placed.dcp"/>
   <File Type="PLACE-IO" Name="Visualizer_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Visualizer_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="Visualizer_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="Visualizer_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="Visualizer_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Visualizer_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="Visualizer_incremental_reuse_pre_placed.rpt"/>
   <File Type="BG-BGN" Name="Visualizer.bgn"/>
+  <File Type="PLACE-TIMING" Name="Visualizer_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="Visualizer_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="Visualizer.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Visualizer_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="Visualizer_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Visualizer_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="Visualizer.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="Visualizer_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="Visualizer_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="Visualizer_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="Visualizer_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="Visualizer_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="Visualizer_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="Visualizer.ltx"/>
   <File Type="ROUTE-DRC-RPX" Name="Visualizer_drc_routed.rpx"/>
   <File Type="BITSTR-MMI" Name="Visualizer.mmi"/>
@@ -38,17 +50,24 @@
   <File Type="ROUTE-TIMINGSUMMARY" Name="Visualizer_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="Visualizer_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="Visualizer_timing_summary_routed.rpx"/>
-  <File Type="RDI-RDI" Name="Visualizer.vdi"/>
+  <File Type="ROUTE-SIMILARITY" Name="Visualizer_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="Visualizer_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="Visualizer_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="Visualizer_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="Visualizer_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Visualizer_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Visualizer_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Visualizer_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Visualizer_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Visualizer_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Visualizer_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Visualizer_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="Visualizer.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Visualizer_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="Visualizer.rbt"/>
   <File Type="BITSTR-NKY" Name="Visualizer.nky"/>
   <File Type="BG-DRC" Name="Visualizer.drc"/>
+  <File Type="RDI-RDI" Name="Visualizer.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>

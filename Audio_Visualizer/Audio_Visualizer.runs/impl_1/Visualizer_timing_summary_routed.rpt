@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
-| Date         : Thu May 25 12:58:43 2023
-| Host         : DESKTOP-VUE9GRE running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sat May 27 15:21:36 2023
+| Host         : ROGG15 running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file Visualizer_timing_summary_routed.rpt -pb Visualizer_timing_summary_routed.pb -rpx Visualizer_timing_summary_routed.rpx -warn_on_violation
 | Design       : Visualizer
 | Device       : 7z020-clg484
@@ -53,7 +53,85 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 427 register/latch pins with no clock driven by root clock pin: clk_100 (HIGH)
+ There are 496 register/latch pins with no clock driven by root clock pin: clk_100 (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[im][10]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[im][11]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[im][12]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[im][13]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[im][14]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[im][15]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[im][16]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[im][17]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[im][1]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[im][2]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[im][3]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[im][4]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[im][5]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[im][6]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[im][7]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[im][8]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[im][9]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[re][10]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[re][11]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[re][12]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[re][13]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[re][14]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[re][15]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[re][16]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[re][17]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[re][1]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[re][2]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[re][3]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[re][4]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[re][5]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[re][6]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[re][7]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[re][8]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/DFT_block/U0/i_synth/i/output_mux_u/output_int_reg[re][9]/Q (HIGH)
+
+ There are 5100 register/latch pins with no clock driven by root clock pin: DFT/clk_100_100k/tmp_clk_reg/Q (HIGH)
+
+ There are 9 register/latch pins with no clock driven by root clock pin: DFT/counter_block/terminal_count_reg/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: DFT/current_state_reg[0]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: DFT/current_state_reg[1]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: DFT/current_state_reg[2]/Q (HIGH)
 
  There are 19 register/latch pins with no clock driven by root clock pin: Video/VGA_timings/Hactive_reg/Q (HIGH)
 
@@ -61,7 +139,19 @@ Table of Contents
 
  There are 19 register/latch pins with no clock driven by root clock pin: Video/VGA_timings/Vactive_reg/Q (HIGH)
 
- There are 80 register/latch pins with no clock driven by root clock pin: Video/clk_div_100_25/tmp_clk_reg/Q (HIGH)
+ There are 65 register/latch pins with no clock driven by root clock pin: Video/VGA_timings/Vsync_reg/Q (HIGH)
+
+ There are 60 register/latch pins with no clock driven by root clock pin: Video/Video_output/ram_index_reg[0]/Q (HIGH)
+
+ There are 60 register/latch pins with no clock driven by root clock pin: Video/Video_output/ram_index_reg[1]/Q (HIGH)
+
+ There are 60 register/latch pins with no clock driven by root clock pin: Video/Video_output/ram_index_reg[2]/Q (HIGH)
+
+ There are 60 register/latch pins with no clock driven by root clock pin: Video/Video_output/ram_index_reg[3]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: Video/Video_output/toggle_reg/Q (HIGH)
+
+ There are 73 register/latch pins with no clock driven by root clock pin: Video/clk_div_100_25/tmp_clk_reg/Q (HIGH)
 
 
 2. checking constant_clock
@@ -76,7 +166,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 1109 pins that are not constrained for maximum delay. (HIGH)
+ There are 13608 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
@@ -124,7 +214,7 @@ Table of Contents
 
 12. checking latch_loops
 ------------------------
- There are 0 combinational latch loops in the design through latch input
+ There are 4 combinational latch loops in the design through latch input (HIGH)
 
 
 

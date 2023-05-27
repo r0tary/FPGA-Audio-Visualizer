@@ -41,16 +41,21 @@ begin
   process(clk)
   begin 
     if (clk'event and clk='1') then
-      if (we='1') then -- write data to address 'addr'
+      --if (we='1') then -- write data to address 'addr'
         --convert 'addr' type to integer from std_logic_vector
         ram_single_port(addr_w) <= din;
-      end if;
+      --end if;
   end if;
   end process;
 
   -- read data from address 'addr'
   -- convert 'addr' type to integer from std_logic_vector
-  dout<=ram_single_port(addr_r);
+  process(clk)
+  begin 
+    if (clk'event and clk='1') then
+  dout<=ram_single_port(1);
+  end if;
+  end process;
 
 
 end Behavioral;

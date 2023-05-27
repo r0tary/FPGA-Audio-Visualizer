@@ -217,18 +217,21 @@ RAM_DFT_mag: RAM_mag port map(clk => clk_100, reset => reset, we => we, addr_r =
             
             
             hphone_valid <= '0';
+            --if (dout > "00000") then
             hphone_l <= (others => '0');
             hphone_r <= (others => '0');
+            --end if;
             
             
             if new_sample = '1' then
                 counter <= counter + 1;
-                
-                audio18_l (17 downto 0) <= DATA(23 downto 6);
-                audio18_r (17 downto 0) <= DATA(23 downto 6);
+                audio18_l (17 downto 0) <= line_in_l(23 downto 6);
+                audio18_r (17 downto 0) <= line_in_r(23 downto 6);
                 hphone_valid <= '1';
-                hphone_l <= line_in_l ;
+                if (dout > "00000") then
+                hphone_l <= line_in_l;
                 hphone_r <= line_in_r;
+                end if;
             end if;
             
         end if;

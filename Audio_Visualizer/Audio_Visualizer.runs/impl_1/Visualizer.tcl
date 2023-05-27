@@ -65,18 +65,19 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 2
+  set_param chipscope.maxJobs 4
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7z020clg484-1
   set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.cache/wt [current_project]
-  set_property parent.project_path C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.xpr [current_project]
-  set_property ip_output_repo C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/games/OneDrive/Skrivebord/FPGA-Audio-Visualizer-main/Audio_Visualizer/Audio_Visualizer.cache/wt [current_project]
+  set_property parent.project_path C:/Users/games/OneDrive/Skrivebord/FPGA-Audio-Visualizer-main/Audio_Visualizer/Audio_Visualizer.xpr [current_project]
+  set_property ip_output_repo C:/Users/games/OneDrive/Skrivebord/FPGA-Audio-Visualizer-main/Audio_Visualizer/Audio_Visualizer.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.runs/synth_1/Visualizer.dcp
-  read_ip -quiet C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/ip/DFT/DFT.xci
-  read_xdc C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/constrs_1/imports/XDC/zedboard_master.xdc
+  add_files -quiet C:/Users/games/OneDrive/Skrivebord/FPGA-Audio-Visualizer-main/Audio_Visualizer/Audio_Visualizer.runs/synth_1/Visualizer.dcp
+  read_ip -quiet C:/Users/games/OneDrive/Skrivebord/FPGA-Audio-Visualizer-main/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/ip/DFT/DFT.xci
+  read_xdc C:/Users/games/OneDrive/Skrivebord/FPGA-Audio-Visualizer-main/Audio_Visualizer/Audio_Visualizer.srcs/constrs_1/imports/XDC/zedboard_master.xdc
   link_design -top Visualizer -part xc7z020clg484-1
   close_msg_db -file init_design.pb
 } RESULT]
@@ -157,12 +158,12 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   set src_rc [catch { 
-    puts "source C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/utils_1/imports/VGA_EXAMPLE/script.tcl"
-    source C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/utils_1/imports/VGA_EXAMPLE/script.tcl
+    puts "source C:/Users/games/OneDrive/Skrivebord/FPGA-Audio-Visualizer-main/Audio_Visualizer/Audio_Visualizer.srcs/utils_1/imports/VGA_EXAMPLE/script.tcl"
+    source C:/Users/games/OneDrive/Skrivebord/FPGA-Audio-Visualizer-main/Audio_Visualizer/Audio_Visualizer.srcs/utils_1/imports/VGA_EXAMPLE/script.tcl
   } _RESULT] 
   if {$src_rc} { 
     send_msg_id runtcl-1 error "$_RESULT"
-    send_msg_id runtcl-2 error "sourcing script C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/utils_1/imports/VGA_EXAMPLE/script.tcl failed"
+    send_msg_id runtcl-2 error "sourcing script C:/Users/games/OneDrive/Skrivebord/FPGA-Audio-Visualizer-main/Audio_Visualizer/Audio_Visualizer.srcs/utils_1/imports/VGA_EXAMPLE/script.tcl failed"
     return -code error
   }
   catch { write_mem_info -force Visualizer.mmi }

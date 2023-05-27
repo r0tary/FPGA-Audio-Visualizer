@@ -98,9 +98,9 @@ END COMPONENT;
          signal reset_count : std_logic;
          signal terminal_count : std_logic;
          signal counter_value : unsigned(4 downto 0);
-         signal highest_magnitude_temp, magn_out_buffer : unsigned(4 downto 0) := "00000";
+         signal highest_magnitude_temp: unsigned(4 downto 0) := "00000";
          signal magn_temp: std_logic_vector(4 downto 0) := "00000";
-         signal addr_buffer: integer := 0;
+         --signal addr_buffer: integer := 0;
          -- state declarations
          type states is (Idle, 
                     LockDelay1,
@@ -229,18 +229,18 @@ stato_presente: process(dft_clk) is
 data_read: process(magnitude_valid) is
     begin
         if rising_edge(magnitude_valid) then
-            magn_out_buffer <= highest_magnitude_temp;
-            addr_buffer <= addr_buffer + 1;
+            magn_out_highest <= std_logic_vector(highest_magnitude_temp);
+            addr_dft <= addr_dft + 1;
         end if;
         
-        if (addr_buffer > 11) then
-            addr_buffer <= 0;
+        if (addr_dft > 11) then
+            addr_dft <= 0;
         end if;
         
-        if (we /= '0') then
-            magn_out_highest <= std_logic_vector(magn_out_buffer);
-            addr_dft <= addr_buffer; 
-        end if;
+        --if (we /= '0') then
+            --magn_out_highest <= std_logic_vector(magn_out_buffer);
+            --addr_dft <= addr_buffer; 
+        --end if;
         
  end process;       
 

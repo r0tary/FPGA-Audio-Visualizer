@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
-| Date         : Thu May 25 12:57:41 2023
-| Host         : DESKTOP-VUE9GRE running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sat May 27 15:20:57 2023
+| Host         : ROGG15 running 64-bit major release  (build 9200)
 | Command      : report_drc -file Visualizer_drc_opted.rpt -pb Visualizer_drc_opted.pb -rpx Visualizer_drc_opted.rpx
 | Design       : Visualizer
 | Device       : xc7z020clg484-1
@@ -24,16 +24,21 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 6
-+--------+------------------+------------------------------------------------+------------+
-| Rule   | Severity         | Description                                    | Violations |
-+--------+------------------+------------------------------------------------+------------+
-| NSTD-1 | Critical Warning | Unspecified I/O Standard                       | 1          |
-| UCIO-1 | Critical Warning | Unconstrained Logical Port                     | 1          |
-| PLIO-3 | Warning          | Placement Constraints Check for IO constraints | 1          |
-| RPBF-3 | Warning          | IO port buffering is incomplete                | 2          |
-| ZPS7-1 | Warning          | PS7 block required                             | 1          |
-+--------+------------------+------------------------------------------------+------------+
+             Violations found: 31
++-------------+------------------+-------------------------------------------------------------------+------------+
+| Rule        | Severity         | Description                                                       | Violations |
++-------------+------------------+-------------------------------------------------------------------+------------+
+| NSTD-1      | Critical Warning | Unspecified I/O Standard                                          | 1          |
+| UCIO-1      | Critical Warning | Unconstrained Logical Port                                        | 1          |
+| DPIP-1      | Warning          | Input pipelining                                                  | 6          |
+| DPOP-1      | Warning          | PREG Output pipelining                                            | 1          |
+| DPOP-2      | Warning          | MREG Output pipelining                                            | 1          |
+| PLHOLDVIO-2 | Warning          | Non-Optimal connections which could lead to hold violations       | 1          |
+| PLIO-3      | Warning          | Placement Constraints Check for IO constraints                    | 1          |
+| RPBF-3      | Warning          | IO port buffering is incomplete                                   | 2          |
+| ZPS7-1      | Warning          | PS7 block required                                                | 1          |
+| AVAL-4      | Advisory         | enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND | 16         |
++-------------+------------------+-------------------------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -45,6 +50,52 @@ Related violations: <none>
 UCIO-1#1 Critical Warning
 Unconstrained Logical Port  
 12 out of 40 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: RGB[19], RGB[18], RGB[17], RGB[16], RGB[11], RGB[10], RGB[9], RGB[8], RGB[3], RGB[2], RGB[1], RGB[0].
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP DFT/DFT_block/U0/i_synth/i/butterfly_u/TWIDDLE_MULT/TWIDDLE_MULT_2/AI_X_CI_DSP48/DSP_V5.DSP input DFT/DFT_block/U0/i_synth/i/butterfly_u/TWIDDLE_MULT/TWIDDLE_MULT_2/AI_X_CI_DSP48/DSP_V5.DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP DFT/DFT_block/U0/i_synth/i/butterfly_u/TWIDDLE_MULT/TWIDDLE_MULT_2/AR_X_CI_DSP48/DSP_V5.DSP input DFT/DFT_block/U0/i_synth/i/butterfly_u/TWIDDLE_MULT/TWIDDLE_MULT_2/AR_X_CI_DSP48/DSP_V5.DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP DFT/Magnitude_block/modulus_squared input DFT/Magnitude_block/modulus_squared/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP DFT/Magnitude_block/modulus_squared input DFT/Magnitude_block/modulus_squared/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP DFT/Magnitude_block/real_squared input DFT/Magnitude_block/real_squared/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP DFT/Magnitude_block/real_squared input DFT/Magnitude_block/real_squared/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP DFT/Magnitude_block/modulus_squared output DFT/Magnitude_block/modulus_squared/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP DFT/Magnitude_block/modulus_squared multiplier stage DFT/Magnitude_block/modulus_squared/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT DFT/counter_block/magn_out_highest[4]_i_1 is driving clock pin of 9 cells. This could lead to large hold time violations. Involved cells are:
+DFT/ADDR_dft_reg[0], DFT/ADDR_dft_reg[1], DFT/ADDR_dft_reg[2], DFT/ADDR_dft_reg[3], DFT/magn_out_highest_reg[0], DFT/magn_out_highest_reg[1], DFT/magn_out_highest_reg[2], DFT/magn_out_highest_reg[3], DFT/magn_out_highest_reg[4]
 Related violations: <none>
 
 PLIO-3#1 Warning
@@ -65,6 +116,86 @@ Related violations: <none>
 ZPS7-1#1 Warning
 PS7 block required  
 The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+AVAL-4#1 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+DFT/DFT_block/U0/i_synth/i/butterfly_u/TWIDDLE_MULT/TWIDDLE_MULT_0/AI_X_CI_DSP48/DSP_V5.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#2 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+DFT/DFT_block/U0/i_synth/i/butterfly_u/TWIDDLE_MULT/TWIDDLE_MULT_0/AI_X_CR_DSP48/DSP_V5.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#3 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+DFT/DFT_block/U0/i_synth/i/butterfly_u/TWIDDLE_MULT/TWIDDLE_MULT_0/AR_X_CI_DSP48/DSP_V5.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#4 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+DFT/DFT_block/U0/i_synth/i/butterfly_u/TWIDDLE_MULT/TWIDDLE_MULT_0/AR_X_CR_DSP48/DSP_V5.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#5 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+DFT/DFT_block/U0/i_synth/i/butterfly_u/TWIDDLE_MULT/TWIDDLE_MULT_1/AI_X_CI_DSP48/DSP_V5.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#6 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+DFT/DFT_block/U0/i_synth/i/butterfly_u/TWIDDLE_MULT/TWIDDLE_MULT_1/AI_X_CR_DSP48/DSP_V5.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#7 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+DFT/DFT_block/U0/i_synth/i/butterfly_u/TWIDDLE_MULT/TWIDDLE_MULT_1/AR_X_CI_DSP48/DSP_V5.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#8 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+DFT/DFT_block/U0/i_synth/i/butterfly_u/TWIDDLE_MULT/TWIDDLE_MULT_1/AR_X_CR_DSP48/DSP_V5.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#9 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+DFT/DFT_block/U0/i_synth/i/butterfly_u/TWIDDLE_MULT/TWIDDLE_MULT_2/AI_X_CI_DSP48/DSP_V5.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#10 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+DFT/DFT_block/U0/i_synth/i/butterfly_u/TWIDDLE_MULT/TWIDDLE_MULT_2/AI_X_CR_DSP48/DSP_V5.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#11 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+DFT/DFT_block/U0/i_synth/i/butterfly_u/TWIDDLE_MULT/TWIDDLE_MULT_2/AR_X_CI_DSP48/DSP_V5.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#12 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+DFT/DFT_block/U0/i_synth/i/butterfly_u/TWIDDLE_MULT/TWIDDLE_MULT_2/AR_X_CR_DSP48/DSP_V5.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#13 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+DFT/DFT_block/U0/i_synth/i/butterfly_u/TWIDDLE_MULT/TWIDDLE_MULT_3/AI_X_CI_DSP48/DSP_V5.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#14 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+DFT/DFT_block/U0/i_synth/i/butterfly_u/TWIDDLE_MULT/TWIDDLE_MULT_3/AI_X_CR_DSP48/DSP_V5.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#15 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+DFT/DFT_block/U0/i_synth/i/butterfly_u/TWIDDLE_MULT/TWIDDLE_MULT_3/AR_X_CI_DSP48/DSP_V5.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#16 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+DFT/DFT_block/U0/i_synth/i/butterfly_u/TWIDDLE_MULT/TWIDDLE_MULT_3/AR_X_CR_DSP48/DSP_V5.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
 
