@@ -73,22 +73,21 @@ begin
     
 ram_read:process(clk,vsync)
     variable toggle: std_logic := '0';
-    begin
-        --if (rising_edge(clk)) then 
-            if (rising_edge(Vsync)) and (rising_edge(clk)) then
+    begin 
+            if (vsync'event and vsync = '1') then
                 toggle := '0';
                 we <= '1';
                 ram_index <= 0;
             end if;
-        
+            
             if (ram_index>11) then
-                toggle := '1';              
+                toggle := '1';
+                ram_index <= 0;              
             elsif ((Vsync = '0') and (ram_index<12) and (toggle = '0')) then
                 we <= '0'; 
                 bar_height(ram_index) <= bar_mag;
                 ram_index <= ram_index + 1;
             end if;
-        --end if;
     end process;
     
 image_generator:process(clk,reset,x_cord,y_cord)
@@ -97,9 +96,10 @@ image_generator:process(clk,reset,x_cord,y_cord)
             R <= (others => '0');
             G <= (others => '0');
             B <= (others => '0');
-        elsif rising_edge(clk) then
+        end if;
+        if rising_edge(clk) then
             if (video_active = '1') then 
-                if ((x_cord > (bar_location(bar_index) + Bar_width + 1)) and (bar_index >= 11)) then
+                if ((x_cord > (bar_location(bar_index) + Bar_width)) and (bar_index >= 11)) then
                     bar_index <= 0;
                 elsif (x_cord > (bar_location(bar_index) + Bar_width)) then
                     bar_index <= bar_index + 1;

@@ -38,7 +38,7 @@ architecture Behavioral of RAM_mag is
                                             "00000","00000","00000","00000","00000",
                                             "00000","00000","00000","00000","00000","00000");
 begin
-  process(clk)
+  ram_write:process(clk)
   begin 
     if (clk'event and clk='1') then
       --if (we='1') then -- write data to address 'addr'
@@ -47,13 +47,26 @@ begin
       --end if;
   end if;
   end process;
+  
+  --process(we)
+    --variable toggle: std_logic := '0'; 
+  --begin
+  
+  --if (we'event and we = '0') then
+    --toggle := '1';
+  --end if;
+   
+  --if (we'event and we = '1') then
+    --toggle := '0';
+  --end if;
+  --end process;
 
   -- read data from address 'addr'
   -- convert 'addr' type to integer from std_logic_vector
   process(clk)
   begin 
     if (clk'event and clk='1') then
-  dout<=ram_single_port(1);
+  dout<=ram_single_port(addr_r);
   end if;
   end process;
 
