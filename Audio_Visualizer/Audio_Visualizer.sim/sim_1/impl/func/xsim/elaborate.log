@@ -1,0 +1,29 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9f1aa4d5307442d19de922d7d674ff35 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Visualizer_TB_func_impl xil_defaultlib.Visualizer_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-4940] 'dft' remains a black box since it has no binding entity [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/DFT_TOP.vhd:114]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling architecture behavioral of entity xil_defaultlib.magnitude_calculator [magnitude_calculator_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.clk_div [clk_div_default]
+Compiling architecture dft_top_behaviour of entity xil_defaultlib.DFT_top [dft_top_default]
+Compiling architecture behavioral of entity xil_defaultlib.VGA [vga_default]
+Compiling architecture behavioral of entity xil_defaultlib.pattern_generator [pattern_generator_default]
+Compiling architecture behavioral of entity xil_defaultlib.Video_top [video_top_default]
+Compiling architecture behavioral of entity xil_defaultlib.Wave_32_as4 [wave_32_as4_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAM_mag [ram_mag_default]
+Compiling architecture behavioral of entity xil_defaultlib.visualizer_tb
+Built simulation snapshot Visualizer_TB_func_impl

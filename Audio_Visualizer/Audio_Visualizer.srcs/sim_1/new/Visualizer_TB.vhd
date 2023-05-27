@@ -38,7 +38,7 @@ architecture Behavioral of Visualizer_TB is
             --Ports used for Video
             R_switch, G_switch, B_switch: in std_logic;
             Hsync: inout std_logic; 
-            Vsync: out std_logic;                       -- Horizontal and Vertical sync
+            Vsync: inout std_logic;                       -- Horizontal and Vertical sync
             RGB : out std_logic_vector(23 downto 0);
             --Ports used for audio   
             AC_MCLK      : out   STD_LOGIC;                      -- 24 Mhz for ADAU1761
@@ -69,7 +69,7 @@ architecture Behavioral of Visualizer_TB is
 
     COMPONENT Wave_32_as4
         PORT
-(
+        (
             Clk : in std_logic;
             Reset : in std_logic;
             Selected_BTN : in STD_LOGIC_VECTOR(3 downto 0);
@@ -92,10 +92,11 @@ architecture Behavioral of Visualizer_TB is
             R_switch, G_switch, B_switch: in std_logic;
             mag_in: in std_logic_vector(4 downto 0);
             --outputs
-            bar_index: inout integer range 0 to 15; 
+            video_active: inout std_logic;
+            ram_index: inout integer range 0 to 15; 
             we: out std_logic;
             Hsync: inout std_logic; 
-            Vsync: out std_logic;                       -- Horizontal and Vertical sync
+            Vsync: inout std_logic;                       -- Horizontal and Vertical sync
             RGB : out std_logic_vector(23 downto 0)
         );
     end component;
@@ -114,22 +115,21 @@ architecture Behavioral of Visualizer_TB is
     
     --clock signals
     signal clk_100: std_logic := '0';
-    --signal clk_25: std_logic := '1';
+    signal clk_25: std_logic := '0';
     constant clock_period: time := 10ns;
     
     
     --for VGA entity
     signal Hsync, Vsync: std_logic := '0';
     signal RGB: std_logic_vector(23 downto 0);
-    --signal video_active: std_logic;
-    --signal x_cord: integer range 0 to 640-1;
-    --signal y_cord: integer range 0 to 480-1;
     signal we: std_logic;
+    signal video_active: std_logic;
     
     --for pattern genrator
     signal R_switch: std_logic := '1';
     signal G_switch: std_logic := '0';
     signal B_switch: std_logic := '1';
+    
     
     --for DFT
     signal clk_100_buffered: std_logic;
@@ -163,15 +163,6 @@ architecture Behavioral of Visualizer_TB is
     signal AC_GPIO1: STD_LOGIC := '0';                      -- I2S MOSI
     signal AC_GPIO2: STD_LOGIC := '0';                      -- I2S_bclk
     signal AC_GPIO3: STD_LOGIC := '0';                       -- I2S_LR
-    
-    -- keep signals for tracking them with the Logic Analyzer
-    --attribute keep : string;
-    --attribute keep of sample_clk_48k : signal is "true";
-    --attribute keep of hphone_l : signal is "true";
-    --attribute keep of hphone_r : signal is "true";
-    
-    --attribute keep of line_in_l : signal is "true";
-    --attribute keep of line_in_r : signal is "true";
 
     --18bit signal for a FFT block
     signal audio18_l, audio18_r : std_logic_vector (17 downto 0);
@@ -180,28 +171,28 @@ architecture Behavioral of Visualizer_TB is
     signal din, dout: std_logic_vector(4 downto 0);
     signal addr_r: integer range 0 to 15 := 0;
     signal addr_w: integer range 0 to 15 := 0;
+    
+    signal FRAME_NUM: integer := 1;
+    signal FRAME_TARGET: integer := 7;
+    signal toggle: std_logic := '0';
+        
 begin
     DFT: DFT_top port map (left_channel_in => audio18_l, right_channel_in => audio18_r, clk_100 => clk_100,
                         magn_out_highest => din, magnitude_valid => magnitude_valid,
                         XK_RE_PROBE => XK_RE_PROBE, addr_dft => addr_w, we => we );
                         
-    Video: Video_top port map(clk => clk_100, RST => reset, mag_in => dout, we => we, bar_index => addr_r,
+    Video: Video_top port map(clk => clk_100, RST => reset, mag_in => dout, we => we, ram_index => addr_r,
                              R_switch => R_switch, G_switch => G_switch, B_switch => B_switch,
-                             Hsync => Hsync, Vsync => Vsync, RGB => RGB); 
+                             Hsync => Hsync, Vsync => Vsync, RGB => RGB, video_active => video_active); 
 
     SINE: Wave_32_as4 Port Map (clk => clk_100, reset => reset, selected_btn => "0001", DATA => DATA,
                             strobe => strobe, count_reader => count_reader);
 
     RAM_DFT_mag: RAM_mag port map(clk => clk_100, reset => reset, we => we, addr_r => addr_r, addr_w => addr_w, din => din, dout => dout);
-    
-    --uut: Visualizer port map(clk_100 => clk_100, reset => reset, 
-    --                            R_switch => R_switch, G_switch => G_switch, B_switch => B_switch,
-    --                            Hsync => Hsync, Vsync => Vsync, RGB => RGB,
-    --                            AC_MCLK => AC_MCLK, AC_ADR0 => AC_ADR0, AC_ADR1 => AC_ADR1, AC_SCK => AC_SCK, AC_SDA => AC_SDA,
-    --                            AC_GPIO0 => AC_GPIO0, AC_GPIO1 => AC_GPIO1, AC_GPIO2 => AC_GPIO2, AC_GPIO3 => AC_GPIO3);
-   
+
     audio18_l (17 downto 0) <= DATA(23 downto 6);
     audio18_r (17 downto 0) <= DATA(23 downto 6);
+    
     --Simulate a 100MHz clock
     clock_process: process
     begin
@@ -211,5 +202,47 @@ begin
         wait for clock_period/2;
     end process;
     
+    clock_25:process
+    begin
+        clk_25 <= '0';
+        wait for 20ns;
+        clk_25 <= '1';
+        wait for 20ns;
+    end process;
+    
+--write RGB values in a text document
+    record_values:process(clk_25) is
+        file     DISP_FILE : text open write_mode is "rgb.txt";
+        variable DISP_LINE : line;
+        variable h : std_logic := '0';
+        
+    begin
+        if rising_edge(clk_25) then
+            if ((FRAME_NUM = FRAME_TARGET) and (toggle = '0')) then
+                if video_active = '1' then
+                    write(DISP_LINE, to_integer(unsigned(RGB)));
+                    write(DISP_LINE, ',');
+                    h := '1';
+                end if;
+
+                if hsync = '0' and h = '1' then
+                    h := '0';
+                    writeline(DISP_FILE, DISP_LINE);
+                end if;
+            
+                if (vsync = '0') then
+                    assert false report "completed...ignore following error messages" severity FAILURE;
+                end if;
+                
+            elsif ((FRAME_NUM /= FRAME_TARGET) AND (vsync = '0') AND (toggle = '0')) then
+                toggle <= '1';
+            elsif ((vsync = '1') AND (toggle = '1')) then
+                toggle <= '0';
+                FRAME_NUM <= FRAME_NUM + 1;
+            end if;
+        end if;
+    end process;    
+    
+
 
 end Behavioral;

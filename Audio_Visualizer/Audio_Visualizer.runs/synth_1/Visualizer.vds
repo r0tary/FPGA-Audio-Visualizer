@@ -2,8 +2,8 @@
 # Vivado v2019.1.3 (64-bit)
 # SW Build 2644227 on Wed Sep  4 09:45:24 MDT 2019
 # IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
-# Start of session at: Sun May 21 18:11:51 2023
-# Process ID: 8580
+# Start of session at: Thu May 25 12:54:59 2023
+# Process ID: 11528
 # Current directory: C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.runs/synth_1
 # Command line: vivado.exe -log Visualizer.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Visualizer.tcl
 # Log file: C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.runs/synth_1/Visualizer.vds
@@ -16,17 +16,17 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 15432 
+INFO: Helper process launched with PID 19608 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 738.828 ; gain = 177.352
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 738.469 ; gain = 177.922
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Visualizer' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:50]
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:138]
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:138]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:137]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:137]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:140]
 INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:141]
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:142]
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:142]
-INFO: [Synth 8-3491] module 'audio_top' declared at 'C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/audio_top.vhd:45' bound to instance 'Audio' of component 'AUDIO_TOP' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:176]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:141]
+INFO: [Synth 8-3491] module 'audio_top' declared at 'C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/audio_top.vhd:45' bound to instance 'Audio' of component 'AUDIO_TOP' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:175]
 INFO: [Synth 8-638] synthesizing module 'audio_top' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/audio_top.vhd:74]
 INFO: [Synth 8-3491] module 'clocking' declared at 'C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/clocking.vhd:30' bound to instance 'i_clocking' of component 'clocking' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/audio_top.vhd:124]
 INFO: [Synth 8-638] synthesizing module 'clocking' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/clocking.vhd:42]
@@ -112,10 +112,10 @@ INFO: [Synth 8-638] synthesizing module 'i2s_data_interface' [C:/Users/G/CODE/pr
 INFO: [Synth 8-256] done synthesizing module 'i2s_data_interface' (6#1) [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/i2s_data_interface.vhd:26]
 INFO: [Synth 8-256] done synthesizing module 'adau1761_izedboard' (7#1) [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/adau1761_izedboard.vhd:47]
 INFO: [Synth 8-256] done synthesizing module 'audio_top' (8#1) [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/audio_top.vhd:74]
-INFO: [Synth 8-3491] module 'DFT_top' declared at 'C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/DFT_TOP.vhd:6' bound to instance 'DFT' of component 'DFT_TOP' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:200]
+INFO: [Synth 8-3491] module 'DFT_top' declared at 'C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/DFT_TOP.vhd:6' bound to instance 'DFT' of component 'DFT_TOP' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:199]
 INFO: [Synth 8-638] synthesizing module 'DFT_top' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/DFT_TOP.vhd:21]
-INFO: [Synth 8-3491] module 'DFT' declared at 'C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.runs/synth_1/.Xil/Vivado-8580-DESKTOP-VUE9GRE/realtime/DFT_stub.vhdl:5' bound to instance 'DFT_block' of component 'DFT' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/DFT_TOP.vhd:114]
-INFO: [Synth 8-638] synthesizing module 'DFT' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.runs/synth_1/.Xil/Vivado-8580-DESKTOP-VUE9GRE/realtime/DFT_stub.vhdl:25]
+INFO: [Synth 8-3491] module 'DFT' declared at 'C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.runs/synth_1/.Xil/Vivado-11528-DESKTOP-VUE9GRE/realtime/DFT_stub.vhdl:5' bound to instance 'DFT_block' of component 'DFT' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/DFT_TOP.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'DFT' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.runs/synth_1/.Xil/Vivado-11528-DESKTOP-VUE9GRE/realtime/DFT_stub.vhdl:25]
 INFO: [Synth 8-3491] module 'magnitude_calculator' declared at 'C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/DFT/magnitude_calculator.vhd:15' bound to instance 'Magnitude_block' of component 'Magnitude_Calculator' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/DFT_TOP.vhd:130]
 INFO: [Synth 8-638] synthesizing module 'magnitude_calculator' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/DFT/magnitude_calculator.vhd:22]
 INFO: [Synth 8-256] done synthesizing module 'magnitude_calculator' (9#1) [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/DFT/magnitude_calculator.vhd:22]
@@ -136,9 +136,10 @@ WARNING: [Synth 8-614] signal 'magn_out_buffer' is read in the process but is no
 WARNING: [Synth 8-3848] Net reset in module/entity DFT_top does not have driver. [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/DFT_TOP.vhd:75]
 INFO: [Synth 8-256] done synthesizing module 'DFT_top' (12#1) [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/DFT_TOP.vhd:21]
 WARNING: [Synth 8-549] port width mismatch for port 'ADDR_dft': port width = 4, actual width = 32 [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:60]
+WARNING: [Synth 8-5640] Port 'video_active' is missing in component declaration [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:105]
 	Parameter RES_X bound to: 640 - type: integer 
 	Parameter RES_Y bound to: 480 - type: integer 
-INFO: [Synth 8-3491] module 'Video_top' declared at 'C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/Video_top.vhd:25' bound to instance 'Video' of component 'Video_top' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:204]
+INFO: [Synth 8-3491] module 'Video_top' declared at 'C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/Video_top.vhd:25' bound to instance 'Video' of component 'Video_top' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:203]
 INFO: [Synth 8-638] synthesizing module 'Video_top' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/Video_top.vhd:46]
 	Parameter RES_X bound to: 640 - type: integer 
 	Parameter RES_Y bound to: 480 - type: integer 
@@ -158,25 +159,26 @@ INFO: [Synth 8-638] synthesizing module 'pattern_generator' [C:/Users/G/CODE/pro
 	Parameter depth bound to: 12 - type: integer 
 	Parameter addr_bits bound to: 4 - type: integer 
 	Parameter width bound to: 10 - type: integer 
+WARNING: [Synth 8-614] signal 'ram_index' is read in the process but is not in the sensitivity list [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/pattern_generator.vhd:74]
+WARNING: [Synth 8-5787] Register we_reg in module pattern_generator is clocked by two different clocks in the same process. This may cause simulation mismatches and synthesis errors. Consider using different process statements  [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/pattern_generator.vhd:79]
+WARNING: [Synth 8-5787] Register we_reg in module pattern_generator is clocked by two different clocks in the same process. This may cause simulation mismatches and synthesis errors. Consider using different process statements  [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/pattern_generator.vhd:79]
 INFO: [Synth 8-256] done synthesizing module 'pattern_generator' (14#1) [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/pattern_generator.vhd:53]
-WARNING: [Synth 8-549] port width mismatch for port 'bar_index': port width = 4, actual width = 32 [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/Video_top.vhd:83]
-WARNING: [Synth 8-549] port width mismatch for port 'bar_index': port width = 32, actual width = 4 [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/Video_top.vhd:101]
 INFO: [Synth 8-256] done synthesizing module 'Video_top' (15#1) [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/Video_top.vhd:46]
-WARNING: [Synth 8-549] port width mismatch for port 'bar_index': port width = 4, actual width = 32 [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:118]
-INFO: [Synth 8-3491] module 'Wave_32_as4' declared at 'C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/Visualizer beta/Wave_32_as4.vhd:7' bound to instance 'SINE' of component 'Wave_32_as4' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:208]
+WARNING: [Synth 8-549] port width mismatch for port 'ram_index': port width = 4, actual width = 32 [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:117]
+INFO: [Synth 8-3491] module 'Wave_32_as4' declared at 'C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/Visualizer beta/Wave_32_as4.vhd:7' bound to instance 'SINE' of component 'Wave_32_as4' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:207]
 INFO: [Synth 8-638] synthesizing module 'Wave_32_as4' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/Visualizer beta/Wave_32_as4.vhd:17]
 INFO: [Synth 8-256] done synthesizing module 'Wave_32_as4' (16#1) [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/Visualizer beta/Wave_32_as4.vhd:17]
-INFO: [Synth 8-3491] module 'RAM_mag' declared at 'C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/new/RAM_mag.vhd:26' bound to instance 'RAM_DFT_mag' of component 'RAM_mag' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:211]
+INFO: [Synth 8-3491] module 'RAM_mag' declared at 'C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/new/RAM_mag.vhd:26' bound to instance 'RAM_DFT_mag' of component 'RAM_mag' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:210]
 INFO: [Synth 8-638] synthesizing module 'RAM_mag' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/new/RAM_mag.vhd:35]
 INFO: [Synth 8-256] done synthesizing module 'RAM_mag' (17#1) [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/new/RAM_mag.vhd:35]
-INFO: [Synth 8-113] binding component instance 'BUFG_inst' to cell 'BUFG' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:242]
-WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:226]
-WARNING: [Synth 8-3848] Net we in module/entity Visualizer does not have driver. [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:170]
+INFO: [Synth 8-113] binding component instance 'BUFG_inst' to cell 'BUFG' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:238]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:225]
+WARNING: [Synth 8-3848] Net we in module/entity Visualizer does not have driver. [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:169]
 INFO: [Synth 8-256] done synthesizing module 'Visualizer' (18#1) [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:50]
 WARNING: [Synth 8-3331] design RAM_mag has unconnected port reset
 WARNING: [Synth 8-3331] design audio_top has unconnected port hphone_r_valid_dummy
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 803.711 ; gain = 242.234
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 803.645 ; gain = 243.098
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -189,10 +191,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 803.711 ; gain = 242.234
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 803.645 ; gain = 243.098
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 803.711 ; gain = 242.234
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 803.645 ; gain = 243.098
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
 WARNING: [Netlist 29-432] The IBUFG primitive 'Audio/i_clocking/clkin1_buf' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
@@ -213,29 +215,29 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/Visualizer_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 929.715 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 931.715 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IBUFG => IBUF: 1 instances
   IOBUF => IOBUF (IBUF, OBUFT): 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 929.715 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 931.715 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 929.715 ; gain = 368.238
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 931.715 ; gain = 371.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 929.715 ; gain = 368.238
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 931.715 ; gain = 371.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for DFT/DFT_block. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 929.715 ; gain = 368.238
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 931.715 ; gain = 371.168
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4471] merging register 'debug_scl_reg' into 'i2c_scl_reg' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/i3c2.vhd:129]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/DFT/magnitude_calculator.vhd:39]
@@ -253,13 +255,16 @@ INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To p
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/DFT/magnitude_calculator.vhd:39]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/DFT/magnitude_calculator.vhd:39]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/DFT/magnitude_calculator.vhd:39]
+INFO: [Synth 8-5544] ROM "bar_location" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bar_start_height" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'audio18_r_reg[17:0]' into 'audio18_l_reg[17:0]' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:199]
 WARNING: [Synth 8-327] inferring latch for variable 'magn_out_highest_reg' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/DFT_TOP.vhd:241]
 WARNING: [Synth 8-327] inferring latch for variable 'ADDR_dft_reg' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/DFT_TOP.vhd:242]
 WARNING: [Synth 8-327] inferring latch for variable 'highest_magnitude_temp_reg' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/DFT_TOP.vhd:212]
 WARNING: [Synth 8-327] inferring latch for variable 'Xpos_reg' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/VGA.vhd:121]
 WARNING: [Synth 8-327] inferring latch for variable 'Ypos_reg' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/VGA.vhd:122]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 929.715 ; gain = 368.238
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 931.715 ; gain = 371.168
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -282,7 +287,7 @@ Detailed RTL Component Info :
 	   2 Input      8 Bit       Adders := 1     
 	   3 Input      8 Bit       Adders := 1     
 	   2 Input      5 Bit       Adders := 2     
-	   2 Input      4 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 4     
 +---XORs : 
 	   2 Input      1 Bit         XORs := 1     
 +---Registers : 
@@ -291,15 +296,17 @@ Detailed RTL Component Info :
 	               32 Bit    Registers := 2     
 	               24 Bit    Registers := 8     
 	               23 Bit    Registers := 1     
-	               18 Bit    Registers := 2     
+	               18 Bit    Registers := 1     
 	               16 Bit    Registers := 2     
 	               10 Bit    Registers := 4     
 	                9 Bit    Registers := 2     
 	                8 Bit    Registers := 5     
 	                5 Bit    Registers := 4     
-	                4 Bit    Registers := 3     
+	                4 Bit    Registers := 5     
 	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 32    
+	                1 Bit    Registers := 34    
++---RAMs : 
+	               80 Bit         RAMs := 1     
 +---ROMs : 
 	                              ROMs := 1     
 +---Muxes : 
@@ -322,7 +329,7 @@ Detailed RTL Component Info :
 	   2 Input      8 Bit        Muxes := 8     
 	  17 Input      8 Bit        Muxes := 1     
 	   7 Input      5 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 10    
 	   4 Input      4 Bit        Muxes := 1     
 	   7 Input      4 Bit        Muxes := 1     
 	   6 Input      4 Bit        Muxes := 2     
@@ -332,7 +339,7 @@ Detailed RTL Component Info :
 	  13 Input      1 Bit        Muxes := 6     
 	  19 Input      1 Bit        Muxes := 1     
 	   8 Input      1 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 38    
+	   2 Input      1 Bit        Muxes := 39    
 	   6 Input      1 Bit        Muxes := 14    
 	  14 Input      1 Bit        Muxes := 1     
 	   7 Input      1 Bit        Muxes := 5     
@@ -348,7 +355,7 @@ Module Visualizer
 Detailed RTL Component Info : 
 +---Registers : 
 	               24 Bit    Registers := 2     
-	               18 Bit    Registers := 2     
+	               18 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input     24 Bit        Muxes := 2     
@@ -470,16 +477,19 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input     12 Bit       Adders := 2     
 	   3 Input      8 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
 +---Registers : 
 	                8 Bit    Registers := 3     
-	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---RAMs : 
+	               80 Bit         RAMs := 1     
 +---Muxes : 
 	  17 Input     12 Bit        Muxes := 1     
 	  17 Input      8 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 6     
-	   2 Input      1 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
 Module Wave_32_as4 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -519,29 +529,34 @@ WARNING: [Synth 8-3331] design DFT_top has unconnected port left_channel_in[0]
 WARNING: [Synth 8-3331] design DFT_top has unconnected port right_channel_in[0]
 WARNING: [Synth 8-3331] design audio_top has unconnected port hphone_r_valid_dummy
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[0] )
-INFO: [Synth 8-3886] merging instance 'Video/Video_output/B_reg[0]' (FDCE) to 'Video/Video_output/B_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Video/Video_output/B_reg[1]' (FDCE) to 'Video/Video_output/B_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Video/Video_output/B_reg[2]' (FDCE) to 'Video/Video_output/B_reg[3]'
-INFO: [Synth 8-3886] merging instance 'Video/Video_output/B_reg[3]' (FDCE) to 'Video/Video_output/B_reg[4]'
-INFO: [Synth 8-3886] merging instance 'Video/Video_output/B_reg[4]' (FDCE) to 'Video/Video_output/B_reg[5]'
-INFO: [Synth 8-3886] merging instance 'Video/Video_output/B_reg[5]' (FDCE) to 'Video/Video_output/B_reg[6]'
-INFO: [Synth 8-3886] merging instance 'Video/Video_output/B_reg[6]' (FDCE) to 'Video/Video_output/B_reg[7]'
-INFO: [Synth 8-3886] merging instance 'Video/Video_output/G_reg[0]' (FDCE) to 'Video/Video_output/G_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Video/Video_output/G_reg[1]' (FDCE) to 'Video/Video_output/G_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Video/Video_output/G_reg[2]' (FDCE) to 'Video/Video_output/G_reg[3]'
-INFO: [Synth 8-3886] merging instance 'Video/Video_output/G_reg[3]' (FDCE) to 'Video/Video_output/G_reg[4]'
-INFO: [Synth 8-3886] merging instance 'Video/Video_output/G_reg[4]' (FDCE) to 'Video/Video_output/G_reg[5]'
-INFO: [Synth 8-3886] merging instance 'Video/Video_output/G_reg[5]' (FDCE) to 'Video/Video_output/G_reg[6]'
-INFO: [Synth 8-3886] merging instance 'Video/Video_output/G_reg[6]' (FDCE) to 'Video/Video_output/G_reg[7]'
-INFO: [Synth 8-3886] merging instance 'Video/Video_output/R_reg[0]' (FDCE) to 'Video/Video_output/R_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Video/Video_output/R_reg[1]' (FDCE) to 'Video/Video_output/R_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Video/Video_output/R_reg[2]' (FDCE) to 'Video/Video_output/R_reg[3]'
-INFO: [Synth 8-3886] merging instance 'Video/Video_output/R_reg[3]' (FDCE) to 'Video/Video_output/R_reg[4]'
-INFO: [Synth 8-3886] merging instance 'Video/Video_output/R_reg[4]' (FDCE) to 'Video/Video_output/R_reg[5]'
-INFO: [Synth 8-3886] merging instance 'Video/Video_output/R_reg[5]' (FDCE) to 'Video/Video_output/R_reg[6]'
-INFO: [Synth 8-3886] merging instance 'Video/Video_output/R_reg[6]' (FDCE) to 'Video/Video_output/R_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Video/Video_output/B_reg[0]' (FDC) to 'Video/Video_output/B_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Video/Video_output/B_reg[1]' (FDC) to 'Video/Video_output/B_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Video/Video_output/B_reg[2]' (FDC) to 'Video/Video_output/B_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Video/Video_output/B_reg[3]' (FDC) to 'Video/Video_output/B_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Video/Video_output/B_reg[4]' (FDC) to 'Video/Video_output/B_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Video/Video_output/B_reg[5]' (FDC) to 'Video/Video_output/B_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Video/Video_output/B_reg[6]' (FDC) to 'Video/Video_output/B_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Video/Video_output/G_reg[0]' (FDC) to 'Video/Video_output/G_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Video/Video_output/G_reg[1]' (FDC) to 'Video/Video_output/G_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Video/Video_output/G_reg[2]' (FDC) to 'Video/Video_output/G_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Video/Video_output/G_reg[3]' (FDC) to 'Video/Video_output/G_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Video/Video_output/G_reg[4]' (FDC) to 'Video/Video_output/G_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Video/Video_output/G_reg[5]' (FDC) to 'Video/Video_output/G_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Video/Video_output/G_reg[6]' (FDC) to 'Video/Video_output/G_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Video/Video_output/R_reg[0]' (FDC) to 'Video/Video_output/R_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Video/Video_output/R_reg[1]' (FDC) to 'Video/Video_output/R_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Video/Video_output/R_reg[2]' (FDC) to 'Video/Video_output/R_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Video/Video_output/R_reg[3]' (FDC) to 'Video/Video_output/R_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Video/Video_output/R_reg[4]' (FDC) to 'Video/Video_output/R_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Video/Video_output/R_reg[5]' (FDC) to 'Video/Video_output/R_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Video/Video_output/R_reg[6]' (FDC) to 'Video/Video_output/R_reg[7]'
 INFO: [Synth 8-3886] merging instance 'Audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[0]' (FDE) to 'Audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[1] )
+INFO: [Synth 8-3886] merging instance 'Video/Video_output/ram_index_reg[0]' (FDCP) to 'Video/Video_output/ram_index_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Video/Video_output/ram_index_reg[2]' (FDCP) to 'Video/Video_output/ram_index_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Video/Video_output/ram_index_reg[3]' (FDCP) to 'Video/Video_output/ram_index_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Video/Video_output/ram_index_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Video/Video_output/toggle_reg )
 INFO: [Synth 8-3886] merging instance 'Audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[1]' (FDE) to 'Audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[2]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[2] )
 INFO: [Synth 8-3886] merging instance 'Audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[2]' (FDE) to 'Audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[3]'
@@ -555,7 +570,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Audio/In
 INFO: [Synth 8-3886] merging instance 'Audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[6]' (FDE) to 'Audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[7]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[7] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 929.715 ; gain = 368.238
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 931.715 ; gain = 371.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -572,11 +587,12 @@ ROM:
 
 
 Distributed RAM: Preliminary Mapping  Report (see note below)
-+------------+---------------------------------+-----------+----------------------+--------------+
-|Module Name | RTL Object                      | Inference | Size (Depth x Width) | Primitives   | 
-+------------+---------------------------------+-----------+----------------------+--------------+
-|Visualizer  | RAM_DFT_mag/ram_single_port_reg | Implied   | 16 x 5               | RAM32M x 1   | 
-+------------+---------------------------------+-----------+----------------------+--------------+
++------------+-----------------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                        | Inference | Size (Depth x Width) | Primitives   | 
++------------+-----------------------------------+-----------+----------------------+--------------+
+|Visualizer  | Video/Video_output/bar_height_reg | Implied   | 16 x 5               | RAM32M x 1   | 
+|Visualizer  | RAM_DFT_mag/ram_single_port_reg   | Implied   | 16 x 5               | RAM32M x 1   | 
++------------+-----------------------------------+-----------+----------------------+--------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
 
@@ -603,24 +619,25 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 948.625 ; gain = 387.148
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 948.371 ; gain = 387.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 949.590 ; gain = 388.113
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 949.340 ; gain = 388.793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Distributed RAM: Final Mapping  Report
-+------------+---------------------------------+-----------+----------------------+--------------+
-|Module Name | RTL Object                      | Inference | Size (Depth x Width) | Primitives   | 
-+------------+---------------------------------+-----------+----------------------+--------------+
-|Visualizer  | RAM_DFT_mag/ram_single_port_reg | Implied   | 16 x 5               | RAM32M x 1   | 
-+------------+---------------------------------+-----------+----------------------+--------------+
++------------+-----------------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                        | Inference | Size (Depth x Width) | Primitives   | 
++------------+-----------------------------------+-----------+----------------------+--------------+
+|Visualizer  | Video/Video_output/bar_height_reg | Implied   | 16 x 5               | RAM32M x 1   | 
+|Visualizer  | RAM_DFT_mag/ram_single_port_reg   | Implied   | 16 x 5               | RAM32M x 1   | 
++------------+-----------------------------------+-----------+----------------------+--------------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
@@ -690,7 +707,7 @@ WARNING: [Synth 8-264] enable of latch \DFT/magn_out_highest_reg[1]  is always d
 WARNING: [Synth 8-264] enable of latch \DFT/magn_out_highest_reg[1]  is always disabled
 INFO: [Synth 8-6837] The timing for the instance Audio/Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 973.977 ; gain = 412.500
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 973.902 ; gain = 413.355
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -713,9 +730,9 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-5410] Found another clock driver BUFG_inst:O [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:242]
+WARNING: [Synth 8-5410] Found another clock driver BUFG_inst:O [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd:238]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 980.746 ; gain = 419.270
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 980.676 ; gain = 420.129
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -728,7 +745,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 980.746 ; gain = 419.270
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 980.676 ; gain = 420.129
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -740,25 +757,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 980.746 ; gain = 419.270
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 980.676 ; gain = 420.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 980.746 ; gain = 419.270
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 980.676 ; gain = 420.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 980.746 ; gain = 419.270
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 980.707 ; gain = 420.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 980.746 ; gain = 419.270
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 980.707 ; gain = 420.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -794,36 +811,35 @@ Report Cell Usage:
 +------+-----------+------+
 |1     |DFT_bbox_0 |     1|
 |2     |BUFG       |     6|
-|3     |CARRY4     |    80|
+|3     |CARRY4     |    75|
 |4     |DSP48E1    |     2|
-|5     |LUT1       |    38|
-|6     |LUT2       |   147|
-|7     |LUT3       |    33|
-|8     |LUT4       |   141|
-|9     |LUT5       |    72|
-|10    |LUT6       |   138|
+|5     |LUT1       |    40|
+|6     |LUT2       |   129|
+|7     |LUT3       |    45|
+|8     |LUT4       |   136|
+|9     |LUT5       |    84|
+|10    |LUT6       |   151|
 |11    |MMCME2_ADV |     1|
-|12    |RAM32M     |     1|
+|12    |RAM32M     |     2|
 |13    |RAMB18E1   |     1|
 |14    |SRL16E     |     3|
 |15    |SRLC32E    |     3|
-|16    |FDCE       |   132|
+|16    |FDCE       |   147|
 |17    |FDPE       |     1|
-|18    |FDRE       |   466|
-|19    |FDSE       |     1|
-|20    |LD         |    14|
-|21    |LDC        |    19|
-|22    |IBUF       |     8|
-|23    |IBUFG      |     1|
-|24    |IOBUF      |     1|
-|25    |OBUF       |    31|
+|18    |FDRE       |   477|
+|19    |LD         |    14|
+|20    |LDC        |    19|
+|21    |IBUF       |     8|
+|22    |IBUFG      |     1|
+|23    |IOBUF      |     1|
+|24    |OBUF       |    31|
 +------+-----------+------+
 
 Report Instance Areas: 
 +------+-----------------------------------------+----------------------------+------+
 |      |Instance                                 |Module                      |Cells |
 +------+-----------------------------------------+----------------------------+------+
-|1     |top                                      |                            |  1383|
+|1     |top                                      |                            |  1420|
 |2     |  Audio                                  |audio_top                   |   552|
 |3     |    Inst_adau1761_izedboard              |adau1761_izedboard          |   395|
 |4     |      Inst_i2c                           |i2c                         |   223|
@@ -832,45 +848,46 @@ Report Instance Areas:
 |7     |      Inst_i2s_data_interface            |i2s_data_interface          |   169|
 |8     |      i_ADAU1761_interface               |ADAU1761_interface          |     2|
 |9     |    i_clocking                           |clocking                    |     3|
-|10    |  DFT                                    |DFT_top                     |   303|
-|11    |    Magnitude_block                      |magnitude_calculator        |    28|
+|10    |  DFT                                    |DFT_top                     |   279|
+|11    |    Magnitude_block                      |magnitude_calculator        |    25|
 |12    |    clk_100_100k                         |clk_div_0                   |    58|
-|13    |    counter_block                        |counter                     |    19|
-|14    |  RAM_DFT_mag                            |RAM_mag                     |     5|
-|15    |  Video                                  |Video_top                   |   396|
-|16    |    VGA_timings                          |VGA                         |   288|
-|17    |    Video_output                         |pattern_generator           |    55|
-|18    |    clk_div_100_25                       |clk_div                     |    53|
+|13    |    counter_block                        |counter                     |    18|
+|14    |  RAM_DFT_mag                            |RAM_mag                     |     1|
+|15    |  SINE                                   |Wave_32_as4                 |    68|
+|16    |  Video                                  |Video_top                   |   409|
+|17    |    VGA_timings                          |VGA                         |   282|
+|18    |    Video_output                         |pattern_generator           |    74|
+|19    |    clk_div_100_25                       |clk_div                     |    53|
 +------+-----------------------------------------+----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 980.746 ; gain = 419.270
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 980.707 ; gain = 420.160
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 64 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:39 . Memory (MB): peak = 980.746 ; gain = 293.266
-Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 980.746 ; gain = 419.270
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:51 . Memory (MB): peak = 980.707 ; gain = 292.090
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 980.707 ; gain = 420.160
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 120 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 116 Unisim elements for replacement
 WARNING: [Netlist 29-432] The IBUFG primitive 'Audio/i_clocking/clkin1_buf' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. Audio/i_clocking/clkin1_buf 
 Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 980.746 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 980.707 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 35 instances were transformed.
+  A total of 36 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 1 instances
   LD => LDCE: 14 instances
   LDC => LDCE: 19 instances
-  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 2 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-134 Infos, 91 Warnings, 0 Critical Warnings and 0 Errors encountered.
+142 Infos, 93 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 980.746 ; gain = 679.867
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 980.746 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:11 . Memory (MB): peak = 980.707 ; gain = 684.230
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 980.707 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.runs/synth_1/Visualizer.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Visualizer_utilization_synth.rpt -pb Visualizer_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun May 21 18:12:48 2023...
+INFO: [Common 17-206] Exiting Vivado at Thu May 25 12:56:20 2023...

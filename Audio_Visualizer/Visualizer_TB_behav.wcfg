@@ -10,18 +10,30 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="6339779559117fs"></ZoomStartTime>
-      <ZoomEndTime time="58705831663329fs"></ZoomEndTime>
-      <Cursor1Time time="13811402806000fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="62680345862067fs"></ZoomEndTime>
+      <Cursor1Time time="33603865000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <NameColumnWidth column_width="135"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="47" />
+   <WVObjectSize size="49" />
+   <wvobject fp_name="/Visualizer_TB/Video/clk_div_100_25/CLK_out" type="logic">
+      <obj_property name="ElementShortName">CLK_out</obj_property>
+      <obj_property name="ObjectShortName">CLK_out</obj_property>
+   </wvobject>
    <wvobject fp_name="/Visualizer_TB/RAM_DFT_mag/ram_single_port" type="array">
-      <obj_property name="ElementShortName">ram_single_port[15:0][4:0]</obj_property>
-      <obj_property name="ObjectShortName">ram_single_port[15:0][4:0]</obj_property>
+      <obj_property name="ElementShortName">ram_single_port[0:15][4:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_single_port[0:15][4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Visualizer_TB/Video/Video_output/bar_height" type="array">
+      <obj_property name="ElementShortName">bar_height[0:15][4:0]</obj_property>
+      <obj_property name="ObjectShortName">bar_height[0:15][4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Visualizer_TB/Video/mag_in" type="array">
+      <obj_property name="ElementShortName">mag_in[4:0]</obj_property>
+      <obj_property name="ObjectShortName">mag_in[4:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/Visualizer_TB/we" type="logic">
       <obj_property name="ElementShortName">we</obj_property>
@@ -31,10 +43,6 @@
       <obj_property name="ElementShortName">addr_r</obj_property>
       <obj_property name="ObjectShortName">addr_r</obj_property>
    </wvobject>
-   <wvobject fp_name="/Visualizer_TB/Video/mag_in" type="array">
-      <obj_property name="ElementShortName">mag_in[4:0]</obj_property>
-      <obj_property name="ObjectShortName">mag_in[4:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/Visualizer_TB/dout" type="array">
       <obj_property name="ElementShortName">dout[4:0]</obj_property>
       <obj_property name="ObjectShortName">dout[4:0]</obj_property>
@@ -42,10 +50,6 @@
    <wvobject fp_name="/Visualizer_TB/addr_w" type="other">
       <obj_property name="ElementShortName">addr_w</obj_property>
       <obj_property name="ObjectShortName">addr_w</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Visualizer_TB/magn_out" type="array">
-      <obj_property name="ElementShortName">magn_out[4:0]</obj_property>
-      <obj_property name="ObjectShortName">magn_out[4:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/Visualizer_TB/din" type="array">
       <obj_property name="ElementShortName">din[4:0]</obj_property>
@@ -62,6 +66,10 @@
    <wvobject fp_name="/Visualizer_TB/Vsync" type="logic">
       <obj_property name="ElementShortName">Vsync</obj_property>
       <obj_property name="ObjectShortName">Vsync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Visualizer_TB/FRAME_NUM" type="other">
+      <obj_property name="ElementShortName">FRAME_NUM</obj_property>
+      <obj_property name="ObjectShortName">FRAME_NUM</obj_property>
    </wvobject>
    <wvobject fp_name="/Visualizer_TB/Video/Video_output/y_cord" type="other">
       <obj_property name="ElementShortName">y_cord</obj_property>

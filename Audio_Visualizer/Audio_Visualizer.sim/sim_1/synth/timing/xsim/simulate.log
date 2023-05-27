@@ -1,0 +1,7 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+ERROR: Array sizes do not match, left array has 18 elements, right array has 0 elements
+Time: 0 ps  Iteration: 0  Process: /Visualizer_TB/DFT/xilinx_proc_1_2040022352
+  File: C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/DFT_TOP.vhd
+
+HDL Line: C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/DFT_TOP.vhd:126

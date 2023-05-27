@@ -33,7 +33,7 @@ entity RAM_mag is
 end RAM_mag;
 
 architecture Behavioral of RAM_mag is
-    type ram_type is array (15 downto 0) of std_logic_vector (4 downto 0);
+    type ram_type is array (0 to 15) of std_logic_vector (4 downto 0);
     signal ram_single_port : ram_type := ("00000","00000","00000","00000","00000",
                                             "00000","00000","00000","00000","00000",
                                             "00000","00000","00000","00000","00000","00000");

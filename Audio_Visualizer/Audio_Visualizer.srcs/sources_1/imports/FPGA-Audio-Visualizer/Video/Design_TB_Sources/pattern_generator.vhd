@@ -42,32 +42,54 @@ entity pattern_generator is
         y_cord : in integer range 0 to 480-1;
         R_switch, G_switch, B_switch: in std_logic;
         bar_mag: in std_logic_vector (4 downto 0);
-        magnitude_valid: in std_logic;
+        Vsync: in std_logic;
         --outputs
-        we: out std_logic;
+        we: out std_logic := '1';
         RGB : out std_logic_vector(23 downto 0);
-        bar_index: inout integer range 0 to 15
+        ram_index: inout integer range 0 to 15 := 0
     );
 end pattern_generator;
 
 architecture Behavioral of pattern_generator is
-    type rom_type_8 is array (0 to 15) of std_logic_vector(7 downto 0);
-    type rom_type_16 is array (0 to 15) of std_logic_vector(11 downto 0);
-    
     signal R, G,B : unsigned(7 downto 0) := (others => '0'); --Red, Green and Blue seperated into three signals
     
-    --signal test_bars: rom_type_8 := (x"64", x"5A", x"50", x"46", x"3C", x"32", x"28", x"32", x"64", x"5A", x"50", x"46", x"3C", x"32", x"28", x"32"); 
+    type rom_type_8 is array (0 to 15) of std_logic_vector(7 downto 0);
+    type rom_type_16 is array (0 to 15) of std_logic_vector(11 downto 0);
+    type ram_type_5 is array (0 to 15) of std_logic_vector (4 downto 0);
+    
     signal bar_location: rom_type_16 := (X"08C", X"0AC", X"0CC", X"0EC", X"10C", X"12C", X"14C", X"16C", X"18C", X"1AC", X"1CC", X"1EC", x"000", x"000", x"000", x"000");
     signal bar_start_height: rom_type_8 := (x"F0",x"F0",x"F0",x"F0",x"F0",x"F0",x"F0",x"F0",x"F0",x"F0",x"F0",x"F0", x"00", x"00", x"00", x"00");
-    
+    signal bar_height: ram_type_5 := ("00000","00000","00000","00000","00000",
+                                            "00000","00000","00000","00000","00000",
+                                            "00000","00000","00000","00000","00000","00000");
     constant BAR_width: integer := 20;
     constant BAR_space: integer := 12;
     constant start_height_offset: integer := 0; --remember that Y0 is from the top
-    --signal bar_index: integer range 0 to 15 := 0;
     
+    signal bar_index: integer range 0 to 15; 
     
 begin
     RGB <= STD_LOGIC_VECTOR(R & G & B);
+    
+ram_read:process(clk,vsync)
+    variable toggle: std_logic := '0';
+    begin
+        --if (rising_edge(clk)) then 
+            if (rising_edge(Vsync)) and (rising_edge(clk)) then
+                toggle := '0';
+                we <= '1';
+                ram_index <= 0;
+            end if;
+        
+            if (ram_index>11) then
+                toggle := '1';              
+            elsif ((Vsync = '0') and (ram_index<12) and (toggle = '0')) then
+                we <= '0'; 
+                bar_height(ram_index) <= bar_mag;
+                ram_index <= ram_index + 1;
+            end if;
+        --end if;
+    end process;
     
 image_generator:process(clk,reset,x_cord,y_cord)
     begin
@@ -76,42 +98,25 @@ image_generator:process(clk,reset,x_cord,y_cord)
             G <= (others => '0');
             B <= (others => '0');
         elsif rising_edge(clk) then
-            if (video_active = '1') then
+            if (video_active = '1') then 
                 if ((x_cord > (bar_location(bar_index) + Bar_width + 1)) and (bar_index >= 11)) then
                     bar_index <= 0;
                 elsif (x_cord > (bar_location(bar_index) + Bar_width)) then
                     bar_index <= bar_index + 1;
                 end if;
                 
-                if (magnitude_valid = '1') then
-                
-                
                 if (((x_cord >= bar_location(bar_index)) and (x_cord < (bar_location(bar_index) + Bar_width))) and
                     ((y_cord <= bar_start_height(bar_index)) and 
-                    y_cord >= (bar_start_height(bar_index) - bar_mag))) then
+                    y_cord >= (bar_start_height(bar_index) - bar_height(bar_index)))) then
                     -- which color is enabled depends on dip switch status
-                    we <= '0'; 
                     R <= (others => R_switch);
                     G <= (others => G_switch);
                     B <= (others => B_switch);
                 else
-                    we <= '1';
                     R <= (others => '0');
                     G <= (others => '0');
                     B <= (others => '0');
                 end if;
-                end if;
-                --if (magnitude_valid = '1') then
-                    --we <= '0';
-                    --R <= (others => '0');
-                    --G <= (others => '0');
-                    --B <= (others => '1');
-                --else
-                    --we <= '1';
-                    --R <= (others => '0');
-                    --G <= (others => '0');
-                    --B <= (others => '0');
-                --end if;
             else
                 bar_index <= 0;
                 R <= (others => '0');

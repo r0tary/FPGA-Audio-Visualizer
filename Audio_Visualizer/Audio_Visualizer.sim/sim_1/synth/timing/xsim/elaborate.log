@@ -1,0 +1,62 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9f1aa4d5307442d19de922d7d674ff35 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot Visualizer_TB_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.Visualizer_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.SRL16E_default
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.FDSE_default
+Compiling module simprims_ver.FDRE(INIT=1'b1)
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.DSP48E1(ACASCREG=2,ADREG=0,AREG=...
+Compiling module simprims_ver.DSP48E1(ADREG=0,DREG=0,INMODEREG...
+Compiling module simprims_ver.DSP48E1(ADREG=0,CREG=0,DREG=0,IN...
+Compiling module simprims_ver.MUXF7
+Compiling module simprims_ver.RB36_INTERNAL_VLOG(DOA_REG=1,DOB...
+Compiling module simprims_ver.RAMB36E1(DOA_REG=1,DOB_REG=1,INI...
+Compiling module simprims_ver.RB36_INTERNAL_VLOG(DOA_REG=1,DOB...
+Compiling module simprims_ver.RAMB36E1(DOA_REG=1,DOB_REG=1,INI...
+Compiling module simprims_ver.RB36_INTERNAL_VLOG(DOA_REG=1,DOB...
+Compiling module simprims_ver.RAMB36E1(DOA_REG=1,DOB_REG=1,INI...
+Compiling module simprims_ver.SRLC32E_default
+Compiling module simprims_ver.FDSE(INIT=1'b0)
+Compiling module simprims_ver.RB18_INTERNAL_VLOG(DOA_REG=1,DOB...
+Compiling module simprims_ver.RAMB18E1(DOA_REG=1,DOB_REG=1,RAM...
+Compiling module simprims_ver.RB18_INTERNAL_VLOG(RAM_MODE="SDP...
+Compiling module simprims_ver.RAMB18E1(RAM_MODE="SDP",READ_WID...
+Compiling module xil_defaultlib.DFT_dft_v4_1_1
+Compiling module xil_defaultlib.DFT
+Compiling architecture behavioral of entity xil_defaultlib.magnitude_calculator [magnitude_calculator_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.clk_div [clk_div_default]
+Compiling architecture dft_top_behaviour of entity xil_defaultlib.DFT_top [dft_top_default]
+Compiling architecture behavioral of entity xil_defaultlib.VGA [vga_default]
+Compiling architecture behavioral of entity xil_defaultlib.pattern_generator [pattern_generator_default]
+Compiling architecture behavioral of entity xil_defaultlib.Video_top [video_top_default]
+Compiling architecture behavioral of entity xil_defaultlib.Wave_32_as4 [wave_32_as4_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAM_mag [ram_mag_default]
+Compiling architecture behavioral of entity xil_defaultlib.visualizer_tb
+Built simulation snapshot Visualizer_TB_time_synth

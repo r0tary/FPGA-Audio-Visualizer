@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
-| Date                      : Sun May 21 18:14:28 2023
+| Date                      : Thu May 25 12:57:52 2023
 | Host                      : DESKTOP-VUE9GRE running 64-bit major release  (build 9200)
 | Command                   : report_io -file Visualizer_io_placed.rpt
 | Design                    : Visualizer
@@ -515,7 +515,7 @@ Table of Contents
 | Y16        |             | High Range | IO_L14N_T2_SRCC_33      | User IO     |             |      33 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | Y17        |             | High Range | VCCO_33                 | VCCO        |             |      33 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
 | Y18        |             | High Range | IO_L12P_T1_MRCC_33      | User IO     |             |      33 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| Y19        | Vsync       | High Range | IO_L11P_T1_SRCC_33      | OUTPUT      | LVCMOS33    |      33 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| Y19        | Vsync       | High Range | IO_L11P_T1_SRCC_33      | BIDIR       | LVCMOS33    |      33 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | Y20        | RGB[21]     | High Range | IO_L9P_T1_DQS_33        | OUTPUT      | LVCMOS33    |      33 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | Y21        | RGB[20]     | High Range | IO_L9N_T1_DQS_33        | OUTPUT      | LVCMOS33    |      33 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | Y22        |             |            | GND                     | GND         |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |

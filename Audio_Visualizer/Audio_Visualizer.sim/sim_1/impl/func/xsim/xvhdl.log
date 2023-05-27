@@ -1,0 +1,42 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.sim/sim_1/impl/func/xsim/Visualizer_TB_func_impl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ADAU1761_interface'
+INFO: [VRFC 10-3107] analyzing entity 'DFT_top'
+INFO: [VRFC 10-3107] analyzing entity 'RAM_mag'
+INFO: [VRFC 10-3107] analyzing entity 'VGA'
+INFO: [VRFC 10-3107] analyzing entity 'adau1761_configuraiton_data'
+INFO: [VRFC 10-3107] analyzing entity 'clk_div'
+INFO: [VRFC 10-3107] analyzing entity 'clocking'
+INFO: [VRFC 10-3107] analyzing entity 'i2s_data_interface'
+INFO: [VRFC 10-3107] analyzing entity 'i3c2'
+INFO: [VRFC 10-3107] analyzing entity 'pattern_generator'
+INFO: [VRFC 10-3107] analyzing entity 'Video_top'
+INFO: [VRFC 10-3107] analyzing entity 'i2c'
+INFO: [VRFC 10-3107] analyzing entity 'adau1761_izedboard'
+INFO: [VRFC 10-3107] analyzing entity 'audio_top'
+INFO: [VRFC 10-3107] analyzing entity 'Visualizer'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/DFT_TOP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DFT_top'
+WARNING: [VRFC 10-3607] overwriting existing primary unit 'dft_top' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/DFT_TOP.vhd:6]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/new/RAM_mag.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAM_mag'
+WARNING: [VRFC 10-3607] overwriting existing primary unit 'ram_mag' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/new/RAM_mag.vhd:26]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/VGA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'VGA'
+WARNING: [VRFC 10-3607] overwriting existing primary unit 'vga' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/VGA.vhd:33]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/Video_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Video_top'
+WARNING: [VRFC 10-3607] overwriting existing primary unit 'video_top' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/Video_top.vhd:25]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/Visualizer beta/Wave_32_as4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Wave_32_as4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/clock_div.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'clk_div'
+WARNING: [VRFC 10-3607] overwriting existing primary unit 'clk_div' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/clock_div.vhd:25]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/DFT/counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/DFT/magnitude_calculator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'magnitude_calculator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/pattern_generator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'pattern_generator'
+WARNING: [VRFC 10-3607] overwriting existing primary unit 'pattern_generator' [C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/pattern_generator.vhd:28]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sim_1/new/Visualizer_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Visualizer_TB'

@@ -33,12 +33,12 @@ entity Video_top is
         RST: in std_logic;                          -- Universal reset
         R_switch, G_switch, B_switch: in std_logic;
         mag_in: in std_logic_vector(4 downto 0);
-        magnitude_valid: in std_logic;
         --outputs
+        video_active: inout std_logic;
         we: out std_logic;
-        bar_index: inout integer range 0 to 15;
+        ram_index: inout integer range 0 to 15;
         Hsync: inout std_logic; 
-        Vsync: out std_logic;                       -- Horizontal and Vertical sync
+        Vsync: inout std_logic;                       -- Horizontal and Vertical sync
         RGB : out std_logic_vector(23 downto 0)
     );
 end Video_top;
@@ -72,22 +72,22 @@ architecture Behavioral of Video_top is
             --Inputs
             clk, reset : in std_logic;
             video_active : in std_logic;
+            vsync: in std_logic;
             x_cord : in integer range 0 to RES_X-1;
             y_cord : in integer range 0 to RES_Y-1;
             R_switch, G_switch, B_switch: in std_logic;
             bar_mag: in std_logic_vector (4 downto 0);
-            magnitude_valid: in std_logic;
             --Outputs
             we: out std_logic;
             RGB : out std_logic_vector(23 downto 0);
-            bar_index: inout integer
+            ram_index: inout integer range 0 to 15
             );
     end component;
     
     signal clk_25: std_logic;
     signal x_cord: integer := 0;
     signal y_cord: integer := 0; 
-    signal video_active : std_logic;  
+    --signal video_active : std_logic;  
 begin
 
     --Converting the 100MHz clock to a 25MHz clock
@@ -98,7 +98,7 @@ begin
                                 Hsync => Hsync, Vsync => Vsync, videoOn => video_active);
     
     Video_output: pattern_generator port map(clk => clk_25, reset => RST, video_active => video_active, we => we, bar_mag => mag_in,
-                                             x_cord => x_cord, y_cord => y_cord, RGB => RGB, bar_index => bar_index, magnitude_valid => magnitude_valid,
-                                             R_switch => R_switch, G_switch => G_switch, B_switch => B_switch); 
+                                             x_cord => x_cord, y_cord => y_cord, RGB => RGB, ram_index => ram_index,
+                                             R_switch => R_switch, G_switch => G_switch, B_switch => B_switch, vsync => vsync); 
 
 end Behavioral;

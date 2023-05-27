@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="DFT_synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1684677020">
   <File Type="PA-TCL" Name="DFT.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="DFT_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="DFT_reports.tcl"/>
   <File Type="RDS-RDS" Name="DFT.vds"/>
   <File Type="RDS-UTIL" Name="DFT_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="DFT_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="DFT.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="DFT_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="DFT_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DFT">
     <File Path="$PSRCDIR/sources_1/ip/DFT/DFT.xci">
       <FileInfo>
@@ -46,9 +43,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
