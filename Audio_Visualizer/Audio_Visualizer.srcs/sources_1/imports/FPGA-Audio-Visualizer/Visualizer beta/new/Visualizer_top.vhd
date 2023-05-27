@@ -128,7 +128,8 @@ component RAM_mag is
            addr_r : in integer;
            addr_w : in integer;
            din : in std_logic_vector(4 downto 0);
-           dout : out std_logic_vector(4 downto 0));
+           dout : out std_logic_vector(4 downto 0);
+           line_in_l : in std_logic_vector(23 downto 0));
 end component;
 
 
@@ -207,7 +208,7 @@ Video: Video_top port map(clk => clk_100, RST => reset, mag_in => dout, ram_inde
 SINE: Wave_32_as4 Port Map (clk => clk_100, reset => reset, selected_btn => "0001", DATA => DATA,
                             strobe => strobe, count_reader => count_reader);
 
-RAM_DFT_mag: RAM_mag port map(clk => clk_100, reset => reset, we => we, addr_r => addr_r, addr_w => addr_w, din => din, dout => dout);
+RAM_DFT_mag: RAM_mag port map(clk => clk_100, reset => reset, we => we, addr_r => addr_r, addr_w => addr_w, din => din, dout => dout, line_in_l => line_in_l);
                             
 
      --loopback "line in" data to headphone output

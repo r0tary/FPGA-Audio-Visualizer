@@ -29,7 +29,8 @@ entity RAM_mag is
            addr_r : in integer range 0 to 15;
            addr_w : in integer range 0 to 15;
            din : in std_logic_vector(4 downto 0);
-           dout : out std_logic_vector(4 downto 0));
+           dout : out std_logic_vector(4 downto 0);
+           line_in_l: in std_logic_vector(23 downto 0));
 end RAM_mag;
 
 architecture Behavioral of RAM_mag is
@@ -65,8 +66,13 @@ begin
   -- convert 'addr' type to integer from std_logic_vector
   process(clk)
   begin 
+  
     if (clk'event and clk='1') then
-  dout<=ram_single_port(addr_r);
+        if (not(line_in_l) > "000000000001000000000000")then
+            dout<=ram_single_port(addr_r);
+        else
+            dout<="00000";
+        end if;
   end if;
   end process;
 

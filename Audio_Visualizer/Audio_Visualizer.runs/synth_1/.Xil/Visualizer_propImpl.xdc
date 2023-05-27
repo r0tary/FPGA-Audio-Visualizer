@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/constrs_1/imports/XDC/zedboard_master.xdc rfile:../../../Audio_Visualizer.srcs/constrs_1/imports/XDC/zedboard_master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/constrs_1/imports/XDC/zedboard_master.xdc rfile:../../../Audio_Visualizer.srcs/constrs_1/imports/XDC/zedboard_master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:69 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN AB1 [get_ports {AC_ADR0}];  # "AC-ADR0"
 set_property src_info {type:XDC file:1 line:70 export:INPUT save:INPUT read:READ} [current_design]

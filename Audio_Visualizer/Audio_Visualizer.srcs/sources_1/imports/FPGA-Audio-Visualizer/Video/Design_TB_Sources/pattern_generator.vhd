@@ -74,12 +74,14 @@ begin
 ram_read:process(clk,vsync)
     variable toggle: std_logic := '0';
     begin 
-            if (vsync'event and vsync = '1') then
+        if (reset = '1') then
+        bar_height <= (others => "00000");
+        elsif (clk'event and clk = '1') then
+            if (vsync = '1') then
                 toggle := '0';
                 we <= '1';
                 ram_index <= 0;
             end if;
-            
             if (ram_index>11) then
                 toggle := '1';
                 ram_index <= 0;              
@@ -88,6 +90,7 @@ ram_read:process(clk,vsync)
                 bar_height(ram_index) <= bar_mag;
                 ram_index <= ram_index + 1;
             end if;
+       end if;
     end process;
     
 image_generator:process(clk,reset,x_cord,y_cord)

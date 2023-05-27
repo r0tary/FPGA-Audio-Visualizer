@@ -1,0 +1,1474 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 14824
+License: Customer
+
+Current time: 	Sat May 27 21:32:04 CEST 2023
+Time zone: 	Central European Standard Time (Europe/Paris)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 2560x1440
+Screen resolution (DPI): 150
+Available screens: 1
+Available disk space: 651 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=18
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	games
+User home directory: C:/Users/games
+User working directory: C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.1
+RDI_DATADIR: C:/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/games/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/games/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/games/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/vivado.log
+Vivado journal file location: 	C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/vivado.jou
+Engine tmp dir: 	C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/.Xil/Vivado-14824-ROGG15
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.1
+XILINX_SDK: C:/Xilinx/SDK/2019.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	168 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 725 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\games\OneDrive\Dokumenter\GitHub\FPGA-Audio-Visualizer\Audio_Visualizer\Audio_Visualizer.xpr. Version: Vivado v2019.1.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 95 MB (+96932kb) [00:00:08]
+// [Engine Memory]: 673 MB (+554621kb) [00:00:08]
+// [GUI Memory]: 119 MB (+20691kb) [00:00:09]
+// [Engine Memory]: 721 MB (+14726kb) [00:00:09]
+// [GUI Memory]: 128 MB (+3218kb) [00:00:09]
+// WARNING: HEventQueue.dispatchEvent() is taking  2232 ms.
+// Tcl Message: open_project C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 766 MB. GUI used memory: 69 MB. Current time: 5/27/23, 9:32:05 PM CEST
+// [Engine Memory]: 766 MB (+9708kb) [00:00:11]
+// Project name: Audio_Visualizer; location: C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer; part: xc7z020clg484-1
+dismissDialog("Open Project"); // by (cl)
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 822 MB (+17640kb) [00:00:15]
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Visualizer(Visualizer_Behavior) (Visualizer_top.vhd)]", 1); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Visualizer(Visualizer_Behavior) (Visualizer_top.vhd)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Visualizer(Visualizer_Behavior) (Visualizer_top.vhd)]", 1, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// Elapsed time: 23 seconds
+selectCodeEditor("Visualizer_top.vhd", 203, 234); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 210, 206); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 259, 183); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 448, 159); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 467, 131); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 247, 252); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 498, 176); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 281, 272); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 499, 199); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 386, 251); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 490, 176); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 388, 254); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 518, 184); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 394, 258); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 465, 258); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 471, 222); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 465, 355); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 469, 301); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 500, 388); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 518, 406); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 509, 388); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 515, 390); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 505, 425); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 504, 477); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 506, 462); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 525, 387); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 526, 471); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 552, 398); // cl (w, cl)
+// Elapsed time: 16 seconds
+selectCodeEditor("Visualizer_top.vhd", 442, 294); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 476, 335); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 486, 374); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 490, 341); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 499, 316); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 491, 289); // cl (w, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Visualizer(Visualizer_Behavior) (Visualizer_top.vhd)]", 1); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Visualizer(Visualizer_Behavior) (Visualizer_top.vhd), RAM_DFT_mag : RAM_mag(Behavioral) (RAM_mag.vhd)]", 6, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Visualizer(Visualizer_Behavior) (Visualizer_top.vhd), RAM_DFT_mag : RAM_mag(Behavioral) (RAM_mag.vhd)]", 6, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("RAM_mag.vhd", 393, 395); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 739, 441); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 636, 403); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 642, 381); // cl (w, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cl): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cl)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cx' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// by (cl):  Generate Bitstream : addNotify
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Sat May 27 21:33:37 2023] Launched synth_1... Run output will be captured here: C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.runs/synth_1/runme.log [Sat May 27 21:33:37 2023] Launched impl_1... Run output will be captured here: C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Generate Bitstream"); // by (cl)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 34 seconds
+selectCodeEditor("RAM_mag.vhd", 210, 389); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 273, 307); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 855 MB. GUI used memory: 73 MB. Current time: 5/27/23, 9:34:13 PM CEST
+selectCodeEditor("RAM_mag.vhd", 244, 261); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 286, 219); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 308, 243); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 304, 273); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 278, 296); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 291, 265); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 430, 246); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 383, 273); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 295, 267); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 312, 282); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 365, 264); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 447, 249); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 425, 275); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 372, 336); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 431, 383); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 430, 363); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 381, 397); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 412, 418); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 407, 388); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 436, 359); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 454, 317); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 445, 345); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 445, 321); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 448, 298); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 453, 336); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 481, 319); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 481, 299); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 662, 278); // cl (w, cl)
+// TclEventType: RUN_STEP_COMPLETED
+selectCodeEditor("RAM_mag.vhd", 654, 262); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 528, 247); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 507, 311); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 556, 286); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("RAM_mag.vhd", 497, 232); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 351, 213); // cl (w, cl)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 66 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// by (cl):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // by (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// by (cl):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.1   **** Build date : May 24 2019 at 15:13:31     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248775017 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  2751 ms.
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1994.383 ; gain = 1091.457 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.runs/impl_1/Visualizer.bit} [get_hw_devices xc7z020_1] 
+// Tcl Message: current_hw_device [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// [GUI Memory]: 139 MB (+4435kb) [00:04:09]
+// [Engine Memory]: 1,902 MB (+1089837kb) [00:04:09]
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,921 MB. GUI used memory: 77 MB. Current time: 5/27/23, 9:36:03 PM CEST
+// Elapsed time: 17 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cl)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.runs/impl_1/Visualizer.bit} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+// Elapsed time: 55 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RAM_mag.vhd", 1); // k (j, cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248775017 
+// n (cl): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cl)
+selectCodeEditor("RAM_mag.vhd", 193, 337); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 483, 391); // cl (w, cl)
+// Elapsed time: 31 seconds
+selectCodeEditor("RAM_mag.vhd", 21, 439); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 95, 481); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 47, 441); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 92, 485); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 47, 416); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 90, 437); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 46, 469); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 100, 504); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 145, 484); // cl (w, cl)
+// Elapsed time: 15 seconds
+selectCodeEditor("RAM_mag.vhd", 364, 474); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 374, 490); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 219, 505); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 378, 488); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 321, 520); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 367, 487); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 323, 518); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 362, 491); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 324, 510); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 364, 485); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 332, 512); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 353, 492); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 324, 511); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 359, 490); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 330, 514); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 369, 492); // cl (w, cl)
+// Elapsed time: 19 seconds
+selectCodeEditor("RAM_mag.vhd", 331, 547); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 283, 450); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 243, 424); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 134, 450); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 287, 350); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 477, 312); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 206, 332); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 114, 342); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("RAM_mag.vhd", 86, 393); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 485, 302); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 125, 428); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 187, 394); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 303, 365); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 504, 307); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 419, 267); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 438, 288); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 373, 371); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 486, 326); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 536, 310); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 427, 349); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 451, 365); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 416, 401); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 441, 371); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 444, 333); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 531, 326); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 522, 278); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 517, 314); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 466, 375); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 458, 403); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 494, 446); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("RAM_mag.vhd", 224, 381); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Visualizer_top.vhd", 0); // k (j, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,943 MB. GUI used memory: 77 MB. Current time: 5/27/23, 9:40:18 PM CEST
+// Elapsed time: 10 seconds
+selectCodeEditor("Visualizer_top.vhd", 284, 351); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 312, 330); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 490, 239); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 499, 253); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 489, 241); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 502, 266); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 497, 248); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 511, 274); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 506, 248); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 520, 280); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 511, 254); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 511, 254, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("Visualizer_top.vhd", 506, 235); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 510, 269); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 506, 242); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 477, 268); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 481, 249); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 485, 265); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 485, 238); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 486, 261); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 486, 242); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 486, 243, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("Visualizer_top.vhd", 484, 252); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 484, 238); // cl (w, cl)
+// Elapsed time: 15 seconds
+selectCodeEditor("Visualizer_top.vhd", 385, 191); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 379, 255); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 421, 242); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 420, 275); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 415, 321); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 440, 363); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 448, 270); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 453, 239); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 452, 199); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 458, 245); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 458, 274); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 463, 235); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 461, 290); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 428, 392); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 433, 426); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 439, 407); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 458, 386); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 458, 361); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 465, 336); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 462, 305); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 560, 272); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 481, 235); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 480, 275); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 481, 269); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 477, 292); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 475, 347); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 244, 444); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 326, 439); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 404, 439); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 458, 451); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 466, 415); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 454, 388); // cl (w, cl)
+// Elapsed time: 54 seconds
+selectCodeEditor("Visualizer_top.vhd", 333, 289); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 141, 287); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 291, 291); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 394, 266); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 414, 292); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 364, 273); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 252, 271); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 330, 267); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 255, 270); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 321, 273); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 263, 273); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 328, 273); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 268, 275); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 320, 271); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 258, 274); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 348, 272); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 269, 269); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 351, 262); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 367, 236); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 361, 265); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 365, 240); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 379, 261); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 378, 239); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 397, 265); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 431, 254); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 438, 228); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 449, 258); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 449, 237); // cl (w, cl)
+// Elapsed time: 15 seconds
+selectCodeEditor("Visualizer_top.vhd", 417, 369); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 437, 385); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 434, 366); // cl (w, cl)
+// Elapsed time: 23 seconds
+selectCodeEditor("Visualizer_top.vhd", 290, 210); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("Visualizer_top.vhd", 438, 323); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 266, 219); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 502, 202); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 485, 164); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 485, 184); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 477, 164); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 447, 129); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 378, 116); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RAM_mag.vhd", 1); // k (j, cl)
+selectCodeEditor("RAM_mag.vhd", 373, 313); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 360, 289); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 413, 266); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 425, 287); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 510, 308); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 502, 290); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 503, 265); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 507, 300); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 518, 280); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 324, 368); // cl (w, cl)
+// Elapsed time: 47 seconds
+selectCodeEditor("RAM_mag.vhd", 210, 387); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 335, 359); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 329, 328); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 506, 297); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 483, 308); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 472, 288); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 515, 322); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 448, 294); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 512, 320); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 487, 298); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 510, 326); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 487, 299); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 503, 319); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 486, 297); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("RAM_mag.vhd", 449, 347); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 448, 352); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 492, 312); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 492, 288); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 465, 367); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 269, 292); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 584, 338); // cl (w, cl)
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Visualizer_top.vhd", 0); // k (j, cl)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RAM_mag.vhd", 1); // k (j, cl)
+selectCodeEditor("RAM_mag.vhd", 625, 369); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 709, 264); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 568, 287); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 590, 214); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 551, 189); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 648, 177); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 650, 149); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 512, 117); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Visualizer_top.vhd", 0); // k (j, cl)
+selectCodeEditor("Visualizer_top.vhd", 599, 459); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 551, 464); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 697, 455); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 121, 493); // cl (w, cl)
+// Elapsed time: 24 seconds
+selectCodeEditor("Visualizer_top.vhd", 569, 460); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 1455, 440); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("Visualizer_top.vhd", 1202, 359); // cl (w, cl)
+selectCodeEditor("Visualizer_top.vhd", 500, 129); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RAM_mag.vhd", 1); // k (j, cl)
+selectCodeEditor("RAM_mag.vhd", 553, 152); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("RAM_mag.vhd", 262, 294); // cl (w, cl)
+// Elapsed time: 22 seconds
+selectCodeEditor("RAM_mag.vhd", 163, 292); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("RAM_mag.vhd", 475, 257); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 482, 253); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 413, 139); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 395, 317); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 326, 370); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 381, 308); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 383, 370); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 399, 316); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 390, 363); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 429, 310); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 413, 359); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 366, 397); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 392, 368); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 364, 293); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 368, 365); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 340, 408); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 348, 392); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 370, 363); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 331, 399); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 352, 369); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 378, 318); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 353, 369); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 372, 325); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 355, 372); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 359, 318); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 305, 393); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 333, 360); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 349, 312); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Visualizer_top.vhd", 0); // k (j, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cl): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cl)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Sat May 27 21:48:37 2023] Launched synth_1... Run output will be captured here: C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.runs/synth_1/runme.log [Sat May 27 21:48:37 2023] Launched impl_1... Run output will be captured here: C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.runs/impl_1/runme.log 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RAM_mag.vhd", 1); // k (j, cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 121 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.runs/impl_1/Visualizer.bit} [get_hw_devices xc7z020_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+selectCodeEditor("RAM_mag.vhd", 224, 409); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 319, 424); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 299, 368); // cl (w, cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248775017 
+// n (cl): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Elapsed time: 43 seconds
+dismissDialog("Close Hardware Target"); // n (cl)
+selectCodeEditor("RAM_mag.vhd", 438, 254); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 547, 322); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 575, 332); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 695, 317); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 664, 287); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 618, 249); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 630, 264); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 616, 245); // cl (w, cl)
+// Elapsed time: 15 seconds
+selectCodeEditor("RAM_mag.vhd", 239, 397); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 293, 362); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 163, 331); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 255, 368); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 240, 400); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 291, 354); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 297, 386); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 314, 354); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 284, 331); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 314, 365); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 290, 388); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 299, 355); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 276, 336); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 487, 313); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 623, 274); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 639, 283); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 594, 263); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 609, 297); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 596, 311); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 627, 291); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 574, 304); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 600, 281); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 446, 252); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 388, 186); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 598, 172); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 699, 166); // cl (w, cl)
+// Elapsed time: 51 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Visualizer_top.vhd", 0); // k (j, cl)
+// Elapsed time: 13 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cl)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (cl): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// by (cl):  Close Hardware Manager : addNotify
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // A (cl)
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+dismissDialog("Close Hardware Manager"); // by (cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Visualizer(Visualizer_Behavior) (Visualizer_top.vhd), Video : Video_top(Behavioral) (Video_top.vhd)]", 4, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Visualizer(Visualizer_Behavior) (Visualizer_top.vhd), Video : Video_top(Behavioral) (Video_top.vhd)]", 4, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Visualizer(Visualizer_Behavior) (Visualizer_top.vhd), Video : Video_top(Behavioral) (Video_top.vhd), Video_output : pattern_generator(Behavioral) (pattern_generator.vhd)]", 7, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Visualizer(Visualizer_Behavior) (Visualizer_top.vhd), Video : Video_top(Behavioral) (Video_top.vhd), Video_output : pattern_generator(Behavioral) (pattern_generator.vhd)]", 7, false, false, false, false, false, true); // B (F, cl) - Double Click
+// Elapsed time: 20 seconds
+selectCodeEditor("pattern_generator.vhd", 269, 297); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 263, 307); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 290, 291); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 547, 290); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 540, 255); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 383, 363); // cl (w, cl)
+// Elapsed time: 22 seconds
+selectCodeEditor("pattern_generator.vhd", 277, 116); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 410, 130); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 440, 117); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 522, 120); // cl (w, cl)
+// Elapsed time: 41 seconds
+selectCodeEditor("pattern_generator.vhd", 440, 107); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 365, 253); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 400, 127); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 401, 316); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 420, 349); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 412, 138); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 415, 109); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 216, 224); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 236, 196); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 248, 163); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 261, 128); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 323, 110); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 307, 152); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 300, 180); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 310, 142); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 357, 289); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 380, 320); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 365, 300); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 371, 281); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("pattern_generator.vhd", 171, 110); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 524, 112); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 469, 107); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 511, 115); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 301, 137); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 390, 56); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 299, 140); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 271, 167); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 337, 187); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 426, 251); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 684, 340); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 346, 285); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 360, 302); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 365, 285); // cl (w, cl)
+// Elapsed time: 18 seconds
+selectCodeEditor("pattern_generator.vhd", 357, 317); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 364, 282); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 391, 310); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 404, 296); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 415, 164); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 418, 138); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 418, 195); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 412, 168); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 412, 146); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 397, 119); // cl (w, cl)
+// Elapsed time: 15 seconds
+selectCodeEditor("pattern_generator.vhd", 212, 117); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 395, 125); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 465, 109); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 223, 113); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 390, 116); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 456, 114); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 368, 117); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 462, 115); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 390, 119); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 453, 116); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 397, 117); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 458, 116); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 403, 117); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 459, 118); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 377, 118); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 468, 118); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 460, 116); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 512, 116); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 459, 113); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 387, 112); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 301, 141); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 386, 120); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 444, 121); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 377, 120); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 462, 123); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 187, 338); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 284, 334); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 324, 337); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 157, 134); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 132, 341); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 208, 138); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 181, 139); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 616, 340); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 392, 116); // cl (w, cl)
+// Elapsed time: 27 seconds
+selectCodeEditor("pattern_generator.vhd", 312, 305); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 320, 287); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 328, 315); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 298, 271); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 453, 417); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 545, 341); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 716, 342); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 387, 327); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 383, 425); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 437, 414); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 373, 412); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 461, 421); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 361, 208); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 361, 191); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 350, 149); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 348, 182); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 370, 159); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 396, 183); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 378, 156); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 387, 141); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 378, 145); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 400, 176); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 389, 177); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 381, 150); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 610, 394); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 565, 413); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 586, 398); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 621, 339); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 515, 338); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 679, 343); // cl (w, cl)
+// Elapsed time: 16 seconds
+selectCodeEditor("pattern_generator.vhd", 513, 410); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 553, 380); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 531, 413); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 293, 307); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 236, 308); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 344, 313); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 380, 314); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 334, 319); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 380, 316); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 310, 316); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 371, 315); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 554, 314); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 547, 336); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 567, 311); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 293, 258); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 681, 263); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 730, 261); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 761, 265); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 817, 265); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 668, 267); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 734, 266); // cl (w, cl)
+// Elapsed time: 64 seconds
+selectCodeEditor("pattern_generator.vhd", 327, 303); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 454, 281); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 605, 294); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 586, 324); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 514, 342); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 498, 292); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 498, 330); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 493, 304); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 496, 283); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 487, 257); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 502, 289); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 497, 311); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 494, 337); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 490, 313); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 489, 290); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 483, 267); // cl (w, cl)
+// Elapsed time: 163 seconds
+selectCodeEditor("pattern_generator.vhd", 208, 38); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 249, 242); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 201, 36); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 303, 240); // cl (w, cl)
+// Elapsed time: 35 seconds
+selectCodeEditor("pattern_generator.vhd", 251, 457); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 191, 333); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 285, 493); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("pattern_generator.vhd", 359, 267); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 377, 266); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 426, 360); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 535, 315); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 466, 366); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 199, 501); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 319, 273); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 303, 486); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 306, 474); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 329, 431); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 325, 376); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 325, 346); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 328, 305); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 337, 263); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 352, 282); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 359, 260); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 387, 290); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 395, 272); // cl (w, cl)
+// Elapsed time: 16 seconds
+selectCodeEditor("pattern_generator.vhd", 431, 335); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 432, 314); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 440, 297); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 444, 320); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 447, 340); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 452, 358); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 458, 384); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 466, 397); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 475, 427); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 458, 409); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 442, 433); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 430, 406); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 344, 385); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 348, 359); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 334, 336); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 350, 312); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RAM_mag.vhd", 2); // k (j, cl)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Video_top.vhd", 3); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pattern_generator.vhd", 4); // k (j, cl)
+selectCodeEditor("pattern_generator.vhd", 430, 218); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 430, 181); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 332, 111); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 356, 145); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 374, 117); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 383, 90); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 338, 162); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 394, 208); // cl (w, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// al (cl): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// by (cl):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al (cl)
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Cancel"); // JButton (A, G)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cl): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cl)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Sat May 27 22:05:08 2023] Launched synth_1... Run output will be captured here: C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.runs/synth_1/runme.log [Sat May 27 22:05:08 2023] Launched impl_1... Run output will be captured here: C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 25 seconds
+selectCodeEditor("pattern_generator.vhd", 377, 329); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 393, 312); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 412, 188); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 437, 232); // cl (w, cl)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("pattern_generator.vhd", 427, 276); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 434, 261); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 430, 234); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 442, 207); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 424, 247); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 436, 274); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 411, 293); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 423, 272); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 353, 227); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 379, 200); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 477, 183); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 426, 228); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 440, 214); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 435, 239); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 444, 212); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 434, 243); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 448, 219); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 438, 242); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 444, 220); // cl (w, cl)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 14 seconds
+selectCodeEditor("pattern_generator.vhd", 534, 358); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 700, 372); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 520, 355); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 447, 320); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 462, 289); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 455, 327); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 449, 309); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 454, 330); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 456, 304); // cl (w, cl)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 66 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// by (cl):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // by (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// by (cl):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.1   **** Build date : May 24 2019 at 15:13:31     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248775017 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.runs/impl_1/Visualizer.bit} [get_hw_devices xc7z020_1] 
+// Tcl Message: current_hw_device [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // by (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// [GUI Memory]: 152 MB (+6673kb) [00:35:42]
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.runs/impl_1/Visualizer.bit} [get_hw_devices xc7z020_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Video_top.vhd", 2); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pattern_generator.vhd", 3); // k (j, cl)
+selectCodeEditor("pattern_generator.vhd", 355, 328); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 363, 281); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 532, 263); // cl (w, cl)
+// Elapsed time: 16 seconds
+selectCodeEditor("pattern_generator.vhd", 133, 264); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 134, 489); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 341, 461); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 464, 392); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 496, 270); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 507, 319); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 569, 452); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 553, 421); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 522, 327); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 510, 305); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 503, 274); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 483, 292); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 443, 347); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 396, 335); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 395, 316); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 415, 280); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 402, 318); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 404, 339); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 522, 381); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 600, 413); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 607, 447); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 612, 422); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 596, 396); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 601, 375); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 602, 351); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 587, 333); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 590, 312); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 231, 463); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 223, 336); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 225, 44); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 158, 369); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 27, 36); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("pattern_generator.vhd", 68, 365); // cl (w, cl)
+// Elapsed time: 25 seconds
+selectCodeEditor("pattern_generator.vhd", 420, 365); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 156, 308); // cl (w, cl)
+typeControlKey((HResource) null, "pattern_generator.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 173, 365); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 244, 344); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 216, 214); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 415, 85); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 82, 130); // cl (w, cl)
+typeControlKey((HResource) null, "pattern_generator.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 179, 104); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 416, 364); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 107, 228); // cl (w, cl)
+typeControlKey((HResource) null, "pattern_generator.vhd", 'c'); // cl (w, cl)
+typeControlKey((HResource) null, "pattern_generator.vhd", 'v'); // cl (w, cl)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("pattern_generator.vhd", 423, 364); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 144, 241); // cl (w, cl)
+typeControlKey((HResource) null, "pattern_generator.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 222, 327); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("pattern_generator.vhd", 415, 238); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,953 MB. GUI used memory: 86 MB. Current time: 5/27/23, 10:10:19 PM CEST
+selectCodeEditor("pattern_generator.vhd", 139, 368); // cl (w, cl)
+typeControlKey((HResource) null, "pattern_generator.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 349, 417); // cl (w, cl)
+// Elapsed time: 15 seconds
+selectCodeEditor("pattern_generator.vhd", 210, 480); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 262, 352); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 257, 320); // cl (w, cl)
+typeControlKey((HResource) null, "pattern_generator.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 504, 312); // cl (w, cl)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("pattern_generator.vhd", 325, 326); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 435, 309); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 470, 234); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 368, 233); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 411, 177); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 416, 142); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 461, 48); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 490, 67); // cl (w, cl)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cl)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (cl): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// by (cl):  Close Hardware Manager : addNotify
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // A (cl)
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+dismissDialog("Close Hardware Manager"); // by (cl)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Visualizer(Visualizer_Behavior) (Visualizer_top.vhd), SINE : Wave_32_as4(Behavioral) (Wave_32_as4.vhd)]", 8, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Visualizer(Visualizer_Behavior) (Visualizer_top.vhd), SINE : Wave_32_as4(Behavioral) (Wave_32_as4.vhd)]", 8, false, false, false, false, false, true); // B (F, cl) - Double Click
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Visualizer(Visualizer_Behavior) (Visualizer_top.vhd), RAM_DFT_mag : RAM_mag(Behavioral) (RAM_mag.vhd)]", 9, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Visualizer(Visualizer_Behavior) (Visualizer_top.vhd), RAM_DFT_mag : RAM_mag(Behavioral) (RAM_mag.vhd)]", 9, false, false, false, false, false, true); // B (F, cl) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("RAM_mag.vhd", 340, 270); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 350, 310); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 1061, 288); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 1039, 265); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 1024, 238); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 973, 294); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 931, 278); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 811, 326); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 811, 317); // cl (w, cl)
+selectCodeEditor("RAM_mag.vhd", 810, 296); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pattern_generator.vhd", 4); // k (j, cl)
+selectCodeEditor("pattern_generator.vhd", 527, 296); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("pattern_generator.vhd", 549, 235); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 530, 362); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 527, 414); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 535, 363); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 557, 333); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 548, 307); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 545, 259); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 548, 239); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 540, 333); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 554, 314); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 560, 360); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 557, 335); // cl (w, cl)
+// Elapsed time: 50 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Wave_32_as4.vhd", 5); // k (j, cl)
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pattern_generator.vhd", 4); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Wave_32_as4.vhd", 5); // k (j, cl)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Video_top.vhd", 3); // k (j, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("Video_top.vhd", 484, 243); // cl (w, cl)
+selectCodeEditor("Video_top.vhd", 491, 212); // cl (w, cl)
+selectCodeEditor("Video_top.vhd", 400, 226); // cl (w, cl)
+selectCodeEditor("Video_top.vhd", 411, 213); // cl (w, cl)
+selectCodeEditor("Video_top.vhd", 281, 209); // cl (w, cl)
+selectCodeEditor("Video_top.vhd", 483, 184); // cl (w, cl)
+selectCodeEditor("Video_top.vhd", 385, 213); // cl (w, cl)
+selectCodeEditor("Video_top.vhd", 486, 183); // cl (w, cl)
+selectCodeEditor("Video_top.vhd", 372, 213); // cl (w, cl)
+selectCodeEditor("Video_top.vhd", 263, 207); // cl (w, cl)
+selectCodeEditor("Video_top.vhd", 219, 210); // cl (w, cl)
+selectCodeEditor("Video_top.vhd", 236, 213); // cl (w, cl)
+selectCodeEditor("Video_top.vhd", 306, 215); // cl (w, cl)
+selectCodeEditor("Video_top.vhd", 468, 221); // cl (w, cl)
+selectCodeEditor("Video_top.vhd", 498, 183); // cl (w, cl)
+selectCodeEditor("Video_top.vhd", 383, 217); // cl (w, cl)
+selectCodeEditor("Video_top.vhd", 227, 210); // cl (w, cl)
+selectCodeEditor("Video_top.vhd", 432, 192); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("Video_top.vhd", 428, 352); // cl (w, cl)
+selectCodeEditor("Video_top.vhd", 435, 412); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pattern_generator.vhd", 4); // k (j, cl)
+selectCodeEditor("pattern_generator.vhd", 595, 291); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 494, 328); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 494, 319); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 617, 350); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 632, 341); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 477, 339); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 335, 345); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 242, 345); // cl (w, cl)
+// Elapsed time: 15 seconds
+selectCodeEditor("pattern_generator.vhd", 725, 265); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 723, 243); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("pattern_generator.vhd", 638, 272); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 640, 255); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 644, 244); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 629, 229); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 629, 212); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 628, 194); // cl (w, cl)
+// Elapsed time: 28 seconds
+selectCodeEditor("pattern_generator.vhd", 398, 218); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 514, 192); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 450, 223); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 584, 198); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 473, 211); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 530, 181); // cl (w, cl)
+// Elapsed time: 37 seconds
+selectCodeEditor("pattern_generator.vhd", 133, 184); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 224, 238); // cl (w, cl)
+typeControlKey((HResource) null, "pattern_generator.vhd", 'v'); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 159, 270); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 414, 384); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 389, 346); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 219, 417); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 152, 441); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 357, 385); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 245, 321); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 293, 175); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 329, 278); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 342, 142); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 316, 219); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 384, 181); // cl (w, cl)
+selectCodeEditor("pattern_generator.vhd", 200, 264); // cl (w, cl)
+// Elapsed time: 20 seconds
+selectCodeEditor("pattern_generator.vhd", 538, 242); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cl): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cl)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cx' command handler elapsed time: 3 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Sat May 27 22:17:14 2023] Launched synth_1... Run output will be captured here: C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.runs/synth_1/runme.log [Sat May 27 22:17:14 2023] Launched impl_1... Run output will be captured here: C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 125 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// by (cl):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // by (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// by (cl):  Auto Connect : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.1   **** Build date : May 24 2019 at 15:13:31     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248775017 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.runs/impl_1/Visualizer.bit} [get_hw_devices xc7z020_1] 
+// Tcl Message: current_hw_device [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  1047 ms.
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+dismissDialog("Auto Connect"); // by (cl)
+// A (cl): Delete Dashboard: addNotify
+// Elapsed time: 15 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (A)
+dismissDialog("Delete Dashboard"); // A (cl)
+// A (cl): Delete Dashboard: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // i
+dismissDialog("Delete Dashboard"); // A (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+// [GUI Memory]: 161 MB (+597kb) [00:48:07]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z020_1"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.runs/impl_1/Visualizer.bit} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 

@@ -17,44 +17,43 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 2
+set_param chipscope.maxJobs 4
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7z020clg484-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.cache/wt [current_project]
-set_property parent.project_path C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.cache/wt [current_project]
+set_property parent.project_path C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
-set_property ip_output_repo c:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.cache/ip [current_project]
+set_property ip_output_repo c:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  {C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/ADAU1761_interface.vhd}
-  {C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/DFT_TOP.vhd}
-  C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/new/RAM_mag.vhd
-  C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/VGA.vhd
-  C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/Video_top.vhd
-  {C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/Visualizer beta/Wave_32_as4.vhd}
-  {C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/adau1761_configuraiton_data.vhd}
-  {C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/adau1761_izedboard.vhd}
-  {C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/audio_top.vhd}
-  C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/clock_div.vhd
-  {C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/clocking.vhd}
-  C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/DFT/counter.vhd
-  {C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/i2c.vhd}
-  {C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/i2s_data_interface.vhd}
-  {C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/i3c2.vhd}
-  C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/DFT/magnitude_calculator.vhd
-  C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/pattern_generator.vhd
-  {C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd}
+  {C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/ADAU1761_interface.vhd}
+  {C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/DFT_TOP.vhd}
+  C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/new/RAM_mag.vhd
+  C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/VGA.vhd
+  C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/Video_top.vhd
+  {C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/Visualizer beta/Wave_32_as4.vhd}
+  {C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/adau1761_configuraiton_data.vhd}
+  {C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/adau1761_izedboard.vhd}
+  {C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/audio_top.vhd}
+  C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/clock_div.vhd
+  {C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/clocking.vhd}
+  C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/DFT/counter.vhd
+  {C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/i2c.vhd}
+  {C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/i2s_data_interface.vhd}
+  {C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/adau1761 driver vhdl/i3c2.vhd}
+  C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/DFT/magnitude_calculator.vhd
+  C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Video/Design_TB_Sources/pattern_generator.vhd
+  {C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/imports/FPGA-Audio-Visualizer/Visualizer beta/new/Visualizer_top.vhd}
 }
-read_ip -quiet C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/ip/DFT/DFT.xci
-set_property used_in_implementation false [get_files -all c:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/ip/DFT/DFT_ooc.xdc]
+read_ip -quiet C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/ip/DFT/DFT.xci
+set_property used_in_implementation false [get_files -all c:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/sources_1/ip/DFT/DFT_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -64,8 +63,8 @@ set_property used_in_implementation false [get_files -all c:/Users/G/CODE/proj_V
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/constrs_1/imports/XDC/zedboard_master.xdc
-set_property used_in_implementation false [get_files C:/Users/G/CODE/proj_Vivado/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/constrs_1/imports/XDC/zedboard_master.xdc]
+read_xdc C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/constrs_1/imports/XDC/zedboard_master.xdc
+set_property used_in_implementation false [get_files C:/Users/games/OneDrive/Dokumenter/GitHub/FPGA-Audio-Visualizer/Audio_Visualizer/Audio_Visualizer.srcs/constrs_1/imports/XDC/zedboard_master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
