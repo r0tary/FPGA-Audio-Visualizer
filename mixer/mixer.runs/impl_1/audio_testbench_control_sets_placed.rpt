@@ -1,0 +1,98 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sat May 27 19:34:22 2023
+| Host         : DESKTOP-NE42FPG running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file audio_testbench_control_sets_placed.rpt
+| Design       : audio_testbench
+| Device       : xc7z020
+--------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    20 |
+|    Minimum number of control sets                        |    20 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    63 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    20 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    11 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             120 |           55 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              46 |           14 |
+| Yes          | No                    | No                     |             299 |           98 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              72 |           20 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------+-----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+----------------+
+|        Clock Signal        |                                Enable Signal                                |                              Set/Reset Signal                              | Slice Load Count | Bel Load Count |
++----------------------------+-----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+----------------+
+|  i_audio/i_clocking/CLK_48 | i_audio/Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/i2c_sda_t_i_1_n_0        |                                                                            |                1 |              1 |
+|  i_audio/i_clocking/CLK_48 | i_audio/Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/i2c_scl_i_1_n_0          |                                                                            |                1 |              1 |
+|  clk_100_IBUF_BUFG         |                                                                             |                                                                            |                1 |              1 |
+|  i_audio/i_clocking/CLK_48 | i_audio/Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/i2c_bits_left0           |                                                                            |                2 |              4 |
+|  i_audio/i_clocking/CLK_48 | i_audio/Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/state[3]_i_1_n_0         |                                                                            |                3 |              4 |
+|  i_audio/i_clocking/CLK_48 | i_audio/Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount[7]_i_1_n_0      |                                                                            |                3 |              8 |
+|  i_audio/i_clocking/CLK_48 | i_audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/i2s_lr_last_i_1_n_0 | i_audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out[39]_i_1_n_0 |                4 |              8 |
+|  i_audio/i_clocking/CLK_48 | i_audio/Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/i2c_data[8]_i_1_n_0      |                                                                            |                4 |              9 |
+|  i_audio/i_clocking/CLK_48 |                                                                             |                                                                            |               11 |             14 |
+|  i_audio/i_clocking/CLK_48 | i_audio/Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/delay[15]_i_1_n_0        |                                                                            |                7 |             16 |
+|  i_audio/i_clocking/CLK_48 | i_audio/Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/pcnext[9]_i_1_n_0        |                                                                            |                7 |             20 |
+|  clk_100_buffered          | i_audio/volume_counter/debouncer_btnU/sel                                   | i_audio/volume_counter/debouncer_btnU/clear                                |                8 |             32 |
+|  clk_100_buffered          | i_audio/volume_counter/debouncer_btnD/count0_carry__2_n_2                   | i_audio/volume_counter/debouncer_btnD/count[0]_i_1__0_n_0                  |                8 |             32 |
+|  i_audio/i_clocking/CLK_48 | i_audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/audio_l_out_n_0     |                                                                            |               14 |             46 |
+|  clk_100_buffered          | i_audio/new_sample_100                                                      |                                                                            |               11 |             46 |
+|  clk_100_buffered          | hphone_valid                                                                |                                                                            |               10 |             46 |
+|  clk_100_IBUF_BUFG         |                                                                             | i_audio/new_sample_reg_0                                                   |               14 |             46 |
+|  i_audio/i_clocking/CLK_48 | i_audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/i2s_lr_last_i_1_n_0 |                                                                            |               18 |             50 |
+|  i_audio/i_clocking/CLK_48 | i_audio/Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_in[126]_i_1_n_0  |                                                                            |               17 |             52 |
+|  clk_100_buffered          |                                                                             |                                                                            |               43 |            107 |
++----------------------------+-----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+----------------+
+
+

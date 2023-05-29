@@ -1,0 +1,96 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat May 27 15:48:37 2023
+# Process ID: 9444
+# Current directory: C:/Moje_stvari/School/Vivado_Projects/mixer
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11948 C:\Moje_stvari\School\Vivado_Projects\mixer\mixer.xpr
+# Log file: C:/Moje_stvari/School/Vivado_Projects/mixer/vivado.log
+# Journal file: C:/Moje_stvari/School/Vivado_Projects/mixer\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Moje_stvari/School/Vivado_Projects/mixer/mixer.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Moje_stvari/School/Vivado_Projects/debouncer_v6/debouncer_v6.srcs/sources_1/new/debouncer.vhd C:/Moje_stvari/School/Vivado_Projects/debouncer_v6/debouncer_v6.srcs/sources_1/new/button_counter.vhd}
+update_compile_order -fileset sources_1
+set_property source_mgmt_mode None [current_project]
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+set_property source_mgmt_mode All [current_project]
+set_property source_mgmt_mode All [current_project]
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+add_files -fileset utils_1 -norecurse C:/Users/Inc/Downloads/script.tcl
+set_property STEPS.WRITE_BITSTREAM.TCL.PRE [ get_files C:/Users/Inc/Downloads/script.tcl -of [get_fileset utils_1] ] [get_runs impl_1]
+set_property STEPS.WRITE_BITSTREAM.TCL.PRE [ get_files C:/Users/Inc/Downloads/script.tcl -of [get_fileset utils_1] ] [get_runs impl_1]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Moje_stvari/School/Vivado_Projects/mixer/mixer.runs/impl_1/audio_testbench.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Moje_stvari/School/Vivado_Projects/mixer/mixer.runs/impl_1/audio_testbench.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
